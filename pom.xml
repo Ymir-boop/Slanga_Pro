@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>vidmot.slanga_pro/vidmot.slanga_pro.HelloApplication</mainClass>
+                            <mainClass>vidmot.slanga_pro/vidmot.slanga_pro.SlangaApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
