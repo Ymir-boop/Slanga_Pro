@@ -5,7 +5,7 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class Leikmadur {
     private SimpleIntegerProperty stada = new SimpleIntegerProperty();
-    private final SimpleStringProperty nafn = new SimpleStringProperty();
+    private final SimpleStringProperty nafn = new SimpleStringProperty(); // kannski óþarfi að hafa þetta sem property
 
     public Leikmadur(String nafn) {
         this.nafn.set(nafn);
@@ -27,6 +27,10 @@ public class Leikmadur {
     public String getNafn() {
         return nafn.get();
     }
+
+//    public SimpleIntegerProperty stadaProperty() {  gæti verið hentugt í bindings fyrir leikmennina
+//        return stada;
+//    }
 
     public static void main(String[] args) {
         Leikmadur lm = new Leikmadur("Hans");
