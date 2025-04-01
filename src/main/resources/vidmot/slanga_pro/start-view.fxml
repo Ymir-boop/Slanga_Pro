@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.StartController">
+   <children>
+      <ImageView fitHeight="210.0" fitWidth="400.0" layoutX="66.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../css/Upphafsmynd.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="229.0" layoutY="395.0" mnemonicParsing="false" text="Spila" />
+   </children>
+</AnchorPane>
