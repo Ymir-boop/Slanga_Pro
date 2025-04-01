@@ -32,6 +32,6 @@
        </GridPane>
    </center>
    <bottom>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+       <fx:include source="button-view.fxml" />
    </bottom>
 </BorderPane>
