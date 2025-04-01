@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<MenuBar xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="vidmot.slanga_pro.MenuController" >
+    <menus>
+        <Menu mnemonicParsing="false" text="Stillingar">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#nyrHandler" text="Opna stillingar" />
+                <MenuItem mnemonicParsing="false" onAction="#opnaHandler" text="Nýr leikur" />
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Hjálp">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#eydaHandler" text="Leiðbeiningar" />
+                <MenuItem mnemonicParsing="false" onAction="#vistaHandler" text="Um" />
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Hætta">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#closeHandler" text="Hætta" />
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>
+
