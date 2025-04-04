@@ -1,4 +1,4 @@
-package Vinnsla;
+package vinnsla;
 
 import java.util.HashMap;
 

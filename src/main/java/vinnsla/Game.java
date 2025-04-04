@@ -1,4 +1,4 @@
-package Vinnsla;
+package vinnsla;
 
 public class Game {
 }
