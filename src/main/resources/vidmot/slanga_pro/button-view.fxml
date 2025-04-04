@@ -6,20 +6,29 @@
 
 <ButtonBar prefHeight="200.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.ButtonController">
    <buttons>
-      <HBox prefHeight="200.0" prefWidth="714.0">
+      <HBox alignment="CENTER" prefHeight="200.0" prefWidth="714.0" stylesheets="@../../css/styles.css">
          <children>
-            <VBox prefHeight="200.0" prefWidth="100.0">
+            <VBox prefHeight="200.0" prefWidth="171.0">
                <children>
                   <Label text="Chill guy á að gera" />
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../css/ChillGIF.gif" />
+                        <Image url="@../../css/images/ChillGIF.gif" />
                      </image></ImageView>
                </children></VBox>
+            <VBox prefHeight="200.0" prefWidth="213.0">
+               <children>
+                  <Label text="Hér fær notandin skilaboð um leikinn" />
+                  <Label text="Hér getur hann fengið fleiri skilaboð" />
+                  <Label text="Hér er svo progress bar" />
+                  <ProgressBar prefWidth="200.0" progress="0.0" />
+               </children>
+            </VBox>
+            <ImageView fx:id="fxDice" fitHeight="114.0" fitWidth="118.0" nodeOrientation="INHERIT" onMousePressed="#diceHandler" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../../css/images/Einn.png" />
+            </ImageView>
          </children>
       </HBox>
-      <Button mnemonicParsing="false" text="Button" />
-      <Button mnemonicParsing="false" text="Button" />
    </buttons>
 
 </ButtonBar>
