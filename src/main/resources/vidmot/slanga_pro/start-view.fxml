@@ -8,9 +8,9 @@
    <children>
       <ImageView fitHeight="210.0" fitWidth="400.0" layoutX="66.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../css/Upphafsmynd.png" />
+            <Image url="@../../css/images/Upphafsmynd.png" />
          </image>
       </ImageView>
-      <Button layoutX="229.0" layoutY="395.0" mnemonicParsing="false" text="Spila" />
+      <Button layoutX="229.0" layoutY="395.0" mnemonicParsing="false" onAction="#onSpila" text="Spila" />
    </children>
 </AnchorPane>

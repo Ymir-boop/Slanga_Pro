@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.SettingController">
+   <children>
+      <Button layoutX="205.0" layoutY="400.0" mnemonicParsing="false" onAction="#onAftur" text="Aftur að borði" />
+      <ComboBox fx:id="fxDifficulty" layoutX="175.0" layoutY="159.0" prefWidth="150.0" promptText="Veldu erfiðleikastig" />
+   </children>
+</AnchorPane>

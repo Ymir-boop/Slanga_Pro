@@ -5,16 +5,16 @@
 <MenuBar xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
          fx:controller="vidmot.slanga_pro.MenuController" >
     <menus>
-        <Menu mnemonicParsing="false" text="Stillingar">
+        <Menu mnemonicParsing="false" text="Leikur">
             <items>
-                <MenuItem mnemonicParsing="false" onAction="#nyrHandler" text="Opna stillingar" />
-                <MenuItem mnemonicParsing="false" onAction="#opnaHandler" text="Nýr leikur" />
+                <MenuItem mnemonicParsing="false" onAction="#nyrHandler" text="Nýr leikur" />
+                <MenuItem mnemonicParsing="false" onAction="#stillaHandler" text="Stillingar" />
             </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Hjálp">
             <items>
-                <MenuItem mnemonicParsing="false" onAction="#eydaHandler" text="Leiðbeiningar" />
-                <MenuItem mnemonicParsing="false" onAction="#vistaHandler" text="Um" />
+                <MenuItem mnemonicParsing="false" onAction="#helpHandler" text="Leiðbeiningar" />
+                <MenuItem mnemonicParsing="false" onAction="#umHandler" text="Um forritið" />
             </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Hætta">
