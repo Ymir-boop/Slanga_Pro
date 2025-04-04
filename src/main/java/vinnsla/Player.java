@@ -1,9 +1,9 @@
-package Vinnsla;
+package vinnsla;
 
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-import static Vinnsla.Dice.getRollResult;
+import static vinnsla.Dice.getRollResult;
 
 public class Player {
     private SimpleIntegerProperty tile = new SimpleIntegerProperty();

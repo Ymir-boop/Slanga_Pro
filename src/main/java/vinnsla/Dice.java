@@ -1,4 +1,4 @@
-package Vinnsla;
+package vinnsla;
 
 import javafx.beans.property.SimpleIntegerProperty;
 
