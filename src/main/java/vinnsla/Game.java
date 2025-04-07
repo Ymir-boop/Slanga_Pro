@@ -1,4 +1,5 @@
 package vinnsla;
 
-public class Game {
+public class Game{
+
 }
