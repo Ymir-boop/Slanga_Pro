@@ -17,7 +17,7 @@ public class Dice {
     /**
      * @return the value of kast
      */
-    public static int getRollResult() {
+    public int getRollResult() {
         return rollResult.get();
     }
 

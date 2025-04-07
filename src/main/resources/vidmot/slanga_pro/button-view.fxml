@@ -4,7 +4,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<ButtonBar prefHeight="200.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.ButtonController">
+<ButtonBar prefHeight="200.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.SlangaController">
    <buttons>
       <HBox alignment="CENTER" prefHeight="200.0" prefWidth="714.0" stylesheets="@../../css/styles.css">
          <children>
@@ -13,7 +13,7 @@
                   <Label text="Chill guy á að gera" />
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../css/images/ChillGIF.gif" />
+                        <Image url="@../../css/images/characters/ChillGIF.gif" />
                      </image></ImageView>
                </children></VBox>
             <VBox prefHeight="200.0" prefWidth="213.0">

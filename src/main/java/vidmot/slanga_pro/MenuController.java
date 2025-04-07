@@ -11,6 +11,7 @@ public class MenuController  {
     //handlerar fyrir menu takka
     public void nyrHandler(ActionEvent actionEvent) {
         System.out.println("Nýr");
+
     }
     public void umHandler(ActionEvent actionEvent) {
         System.out.println("Um");

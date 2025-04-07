@@ -3,6 +3,7 @@ package vidmot.slanga_pro;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import vinnsla.Difficulty;
+import vinnsla.Game;
 import vinnsla.View;
 import vinnsla.ViewSwitcher;
 import javafx.event.ActionEvent;

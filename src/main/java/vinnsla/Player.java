@@ -2,20 +2,32 @@ package vinnsla;
 
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.scene.layout.Pane;
 
-import static vinnsla.Dice.getRollResult;
 
-public class Player {
+public class Player extends Pane {
     private SimpleIntegerProperty tile = new SimpleIntegerProperty();
     private final SimpleStringProperty name = new SimpleStringProperty(); // kannski óþarfi að hafa þetta sem property
+    private int maxTiles;
 
     public Player(String name) {
         this.name.set(name);
         tile.set(1);
     }
 
-    public void move(int roll) {
-        this.tile.set(this.tile.get() + roll);
+    /**
+     *
+     * @param roll kast
+     * @return skilar true ef leikurinn klárast.
+     */
+    public boolean move(int roll) { // þarf að breyta tests núna FIXME
+        int landing = this.tile.get() + roll;
+        if (landing >= maxTiles){
+            this.tile.set(maxTiles);
+            return true;
+        }
+        this.tile.set(landing);
+        return false;
     }
 
     public void reset() {
@@ -38,7 +50,7 @@ public class Player {
         Player player = new Player("Hans");
         Dice dice = new Dice();
         dice.roll();
-        int rollResult = getRollResult();
+        int rollResult = dice.getRollResult();
         player.move(rollResult);
         System.out.println(player.getName() + " færðist á reit " + player.getTile());
         player.move(5);
