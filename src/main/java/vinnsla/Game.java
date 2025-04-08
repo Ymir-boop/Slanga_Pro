@@ -29,8 +29,7 @@ public class Game{
     }
 
     private Player createPlayer() {
-        playerDialog.open();
-        return null;
+        return playerDialog.open();
     }
 
     /**
