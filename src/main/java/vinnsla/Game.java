@@ -22,7 +22,9 @@ public class Game{
         players = new Player[playerAmount];
         for (int i = 0; i < playerAmount; i++){
             // frumstilla alla spilarana...opnar dialog sem biður um nafn og mynd??
-            players[i] = createPlayer();
+            Player p = createPlayer();
+            if (p == null) return;
+            players[i] = p;
             //System.out.println("Created player: " + players[i].getName() + i);
         }
         nextPlayer = players[indexOfPlayer];

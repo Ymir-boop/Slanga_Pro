@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
@@ -25,7 +26,10 @@
                </children>
             </VBox>
             <ImageView fx:id="fxDice" fitHeight="114.0" fitWidth="118.0" nodeOrientation="INHERIT" onMousePressed="#diceHandler" pickOnBounds="true" preserveRatio="true">
-               <Image url="@../../css/images/dice/1.png" />
+               <Image url="@../../css/images/dice/6.png" />
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
             </ImageView>
          </children>
       </HBox>

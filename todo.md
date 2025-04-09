@@ -5,3 +5,8 @@
 
 [ ] finna út með dialoginni til að bæta við leikmanni  
 [ ] klára lógíkina í leiknum og allt það.
+
+[ ] gera progress bar til að sjá árangur leikmanns
+
+[ ] gera um glugga sem opnast í menuinu
+[ ] gera leiðbeiningar glugga líka
