@@ -61,7 +61,7 @@ public class PlayerDialog {
     }
 
     private void resetFields() {
-        nameField.setText("Ónefndur leikmaður");
+        nameField.setText("");
         if (colorField != null) colorField.setValue(Color.BLACK);     // or use a default color like Color.BLUE
         if (imageField != null) imageField.setText("");
     }

@@ -22,7 +22,7 @@ public class SlangaApplication extends Application {
 //    }
 
     @Override
-    public void start(Stage stage) {
+    public void start(Stage stage) throws IOException {
         var scene = new Scene(new Pane());
         ViewSwitcher.setScene(scene);
         ViewSwitcher.switchTo(View.START_VIEW);

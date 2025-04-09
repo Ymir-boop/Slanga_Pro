@@ -2,10 +2,9 @@ package vidmot.slanga_pro;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
-import vinnsla.Difficulty;
-import vinnsla.Game;
-import vinnsla.View;
-import vinnsla.ViewSwitcher;
+import javafx.scene.control.Spinner;
+import javafx.scene.control.SpinnerValueFactory;
+import vinnsla.*;
 import javafx.event.ActionEvent;
 
 public class SettingController {
@@ -13,7 +12,26 @@ public class SettingController {
     @FXML
     public ComboBox<String> fxDifficulty;
 
-    public void onAftur(ActionEvent actionEvent) {
+    @FXML
+    public Spinner<Integer> fxPlayers;
+
+    @FXML
+    public ComboBox<String> fxTheme;
+
+    public void initialize() {
+        fxDifficulty.getItems().addAll(Difficulty.getValues());
+        fxPlayers.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 5, 2));
+        fxTheme.getItems().addAll(Theme.getValues());
+        //fxPlayers.getValueFactory().setValue(Game.getTimi().get().getHour()); binding fyrir fjölda spilara valið og í game
+
+    }
+
+    public void onSpila(ActionEvent actionEvent) {
+        if (fxDifficulty.getValue() == null) {
+            System.out.println("Defaulting to medium");
+            ViewSwitcher.switchTo(View.MEDIUM_VIEW);
+            return;
+        }
         String val = fxDifficulty.getValue();
         if (val.equals(Difficulty.EASY.getMessage())) {
             ViewSwitcher.switchTo(View.EASY_VIEW);
@@ -29,10 +47,4 @@ public class SettingController {
             ViewSwitcher.switchTo(View.MEDIUM_VIEW);
         }
     }
-
-    public void initialize() {
-        fxDifficulty.getItems().addAll(Difficulty.getValues());
-        fxDifficulty.setValue(Difficulty.MEDIUM.getMessage());
-    }
-
 }
