@@ -23,7 +23,7 @@ public class SlangaApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        var scene = new Scene(new Pane());
+        var scene = new Scene(new Pane(), 500, 700);
         ViewSwitcher.setScene(scene);
         ViewSwitcher.switchTo(View.START_VIEW);
         stage.setTitle("Slönguspil Pro");
