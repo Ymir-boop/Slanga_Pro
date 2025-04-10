@@ -18,6 +18,9 @@ public class Game{
     private int indexOfPlayer = 0;
     private int i = 0;
 
+    public Game() {
+    }
+
     public Player getNextPlayer() {
         return nextPlayer;
     }
@@ -69,5 +72,13 @@ public class Game{
     }
 
     public static void main(String[] args) {
+    }
+
+    public Player[] getPlayers() {
+        return players;
+    }
+
+    public Dice getDice() {
+        return dice;
     }
 }

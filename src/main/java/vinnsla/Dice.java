@@ -1,5 +1,7 @@
 package vinnsla;
 
+import javafx.beans.Observable;
+import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
 public class Dice {
@@ -30,4 +32,7 @@ public class Dice {
         System.out.println(t.getRollResult());
     }
 
+    public IntegerProperty getRollResultProperty() {
+        return rollResult;
+    }
 }

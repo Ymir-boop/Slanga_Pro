@@ -1,5 +1,6 @@
 package vinnsla;
 
+import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.scene.layout.Pane;
@@ -35,6 +36,10 @@ public class Player extends Pane {
 
     public int getTile() {
         return tile.get();
+    }
+
+    public IntegerProperty getTileProperty() {
+        return tile;
     }
 
     public String getName() {

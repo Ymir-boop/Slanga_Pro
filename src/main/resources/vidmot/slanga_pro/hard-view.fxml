@@ -11,7 +11,7 @@
         <fx:include source="menu-view.fxml" />
     </top>
     <center>
-        <GridPane gridLinesVisible="true" layoutX="37.0" layoutY="36.0" prefHeight="301.0" prefWidth="426.0">
+        <GridPane fx:id="table" gridLinesVisible="true" layoutX="37.0" layoutY="36.0" prefHeight="301.0" prefWidth="426.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

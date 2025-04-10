@@ -26,8 +26,10 @@
 
 
  - gera tengingu á það við viðmótið svo hreyfingin sjáist á borðinu
+ - tengja myndina á teningnum við kast tenings
 
 ## Vandamál
 
  - Nýr leikur takkinn virkar ekki
- - 
+ - Gridpane er null???
+ - teningur er null???
