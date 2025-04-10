@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.EndController">
+   <children>
+      <Button layoutX="224.0" layoutY="601.0" mnemonicParsing="false" onAction="#onAftur" text="Spila aftur" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="154.0" layoutY="137.0" text="xxx er sigurvegari leiksins!" />
+   </children>
+</AnchorPane>

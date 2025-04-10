@@ -10,26 +10,30 @@ import vinnsla.View;
 import vinnsla.ViewSwitcher;
 
 public class SlangaController {
-    Game game;
+    private Game game;
+    private boolean gameOver = false;
 
     static IntegerProperty players = new SimpleIntegerProperty();
     int rowsNCols = 5;
 
     public void initialize() {}
 
+
     public void diceHandler(MouseEvent mouseEvent) {
-        if (game == null) {
-            System.out.println("Game is null");
+        if (game == null || gameOver) {
+            nyrHandler(null);
             return;
         }
-        game.round();
+        if (game.round()){
+            gameOver = true;
+            ViewSwitcher.switchTo(View.END_VIEW);
+        };
     }
-
-    //reset aðferð
 
     //handlerar fyrir menu takka
     public void nyrHandler(ActionEvent actionEvent) {
         System.out.println("Nýr");
+        gameOver = false;
         if (players.getValue() == 0){
             game = new Game(rowsNCols, 1);
             return;

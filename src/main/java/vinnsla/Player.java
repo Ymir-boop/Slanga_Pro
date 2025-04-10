@@ -8,7 +8,6 @@ import javafx.scene.layout.Pane;
 public class Player extends Pane {
     private SimpleIntegerProperty tile = new SimpleIntegerProperty();
     private final SimpleStringProperty name = new SimpleStringProperty(); // kannski óþarfi að hafa þetta sem property
-    private int maxTiles;
 
     public Player(String name) {
         this.name.set(name);
@@ -16,14 +15,14 @@ public class Player extends Pane {
     }
 
     /**
-     *
      * @param roll kast
+     * @param max
      * @return skilar true ef leikurinn klárast.
      */
-    public boolean move(int roll) { // þarf að breyta tests núna FIXME
+    public boolean move(int roll, int max) { // þarf að breyta tests núna FIXME
         int landing = this.tile.get() + roll;
-        if (landing >= maxTiles){
-            this.tile.set(maxTiles);
+        if (landing >= max){
+            this.tile.set(max);
             return true;
         }
         this.tile.set(landing);
@@ -49,11 +48,12 @@ public class Player extends Pane {
     public static void main(String[] args) {
         Player player = new Player("Hans");
         Dice dice = new Dice();
+        int max = 25;
         dice.roll();
         int rollResult = dice.getRollResult();
-        player.move(rollResult);
+        player.move(rollResult, max);
         System.out.println(player.getName() + " færðist á reit " + player.getTile());
-        player.move(5);
+        player.move(5, max);
         System.out.println(player.getName() + " færðist á reit " + player.getTile());
         player.reset();
         System.out.println(player.getName() + " færðist á reit " + player.getTile());

@@ -9,7 +9,8 @@ public enum View {
     EASY_VIEW("/vidmot/slanga_pro/easy-view.fxml"),
     MEDIUM_VIEW("/vidmot/slanga_pro/medium-view.fxml"),
     HARD_VIEW("/vidmot/slanga_pro/hard-view.fxml"),
-    SETTING_VIEW("/vidmot/slanga_pro/setting-view.fxml");
+    SETTING_VIEW("/vidmot/slanga_pro/setting-view.fxml"),
+    END_VIEW("/vidmot/slanga_pro/end-view.fxml");
 
     /**
      * tilviksbreyta sem geymir nafn skrár

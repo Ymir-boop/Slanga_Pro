@@ -2,6 +2,9 @@ package vinnsla;
 
 import vidmot.slanga_pro.PlayerDialog;
 
+import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
+
 public class Game{
 
     private int max;
@@ -13,6 +16,12 @@ public class Game{
     private Player[] players;
     private int playerAmount;
     private int indexOfPlayer = 0;
+    private int i = 0;
+
+    public Player getNextPlayer() {
+        return nextPlayer;
+    }
+
     private Player nextPlayer;
 
     public Game(int size, int playerAmount){
@@ -21,11 +30,10 @@ public class Game{
         this.playerAmount = playerAmount;
         players = new Player[playerAmount];
         for (int i = 0; i < playerAmount; i++){
-            // frumstilla alla spilarana...opnar dialog sem biður um nafn og mynd??
             Player p = createPlayer();
             if (p == null) return;
             players[i] = p;
-            //System.out.println("Created player: " + players[i].getName() + i);
+            System.out.println("Created player " + (i+1) + ": " + players[i].getName());
         }
         nextPlayer = players[indexOfPlayer];
     }
@@ -39,16 +47,24 @@ public class Game{
      * @return skilar true ef leikurinn er búinn
      */
     public boolean round(){
-        System.out.println("Round" + indexOfPlayer);
-        if (nextPlayer == null) return true;
+        System.out.println("\nRound " + ++i + "\n");
+        if (nextPlayer == null) {
+            System.out.println("Next player is null");
+            return true;
+        }
         dice.roll();
         int result = dice.getRollResult();
+        System.out.println("Result: " + result);
+        if (nextPlayer.move(dice.getRollResult(), max)) {
+            System.out.println(nextPlayer.getName() + " vinnur leikinn");
+            return true;
+        }
         System.out.println(nextPlayer.getName() + " færðist á reit " + nextPlayer.getTile());
-        if (nextPlayer.move(dice.getRollResult())) return true;
 
         // setur næsta leikmann
         indexOfPlayer = ++indexOfPlayer % playerAmount;
         nextPlayer = players[indexOfPlayer];
+        System.out.println("Next player: " + nextPlayer.getName());
         return false;
     }
 
