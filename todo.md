@@ -1,4 +1,4 @@
-[ ] tengja spinnerinn til að velja hversu margar leikmenn eru í leiknum
+[ ] tengja bind á spinnerinn til að velja hversu margir leikmenn eru í leiknum
 
 [ ] gera þemun  
 [ ] gera dæmið sem tengir valið í settings við þema sem er birt
@@ -10,3 +10,14 @@
 
 [ ] gera um glugga sem opnast í menuinu
 [ ] gera leiðbeiningar glugga líka
+
+---
+
+## Næstu verkefni
+
+ - Binding fyrir spinnerinn til að velja hversu margir leikmenn eru í leiknum
+ - Láta leikinn virka 
+    - finnaút afh kastið virkar ekki
+    - finna út afh næsti maður breytist ekki
+    - láta það virka
+ - gera tengingu á það við viðmótið svo hreyfingin sjáist á borðinu

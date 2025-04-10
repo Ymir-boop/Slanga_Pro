@@ -11,7 +11,7 @@ public class Game{
 
     // hér er allt sem kemur að spilurum
     private Player[] players;
-    private int playerAmount = 2;
+    private int playerAmount;
     private int indexOfPlayer = 0;
     private Player nextPlayer;
 

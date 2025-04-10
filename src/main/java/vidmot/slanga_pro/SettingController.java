@@ -22,8 +22,7 @@ public class SettingController {
         fxDifficulty.getItems().addAll(Difficulty.getValues());
         fxPlayers.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 5, 2));
         fxTheme.getItems().addAll(Theme.getValues());
-        //fxPlayers.getValueFactory().setValue(Game.getTimi().get().getHour()); binding fyrir fjölda spilara valið og í game
-
+        fxPlayers.getValueFactory().valueProperty().bindBidirectional(SlangaController.players.asObject());
     }
 
     public void onSpila(ActionEvent actionEvent) {
