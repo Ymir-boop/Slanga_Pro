@@ -1,9 +1,14 @@
-[ ] tengja bind á spinnerinn til að velja hversu margir leikmenn eru í leiknum
+
+## Todo:
+
+[x] tengja bind á spinnerinn til að velja hversu margir leikmenn eru í leiknum
 
 [ ] gera þemun  
 [ ] gera dæmið sem tengir valið í settings við þema sem er birt
 
-[ ] finna út með dialoginni til að bæta við leikmanni  
+[x] finna út með dialoginni til að bæta við leikmanni  
+
+[ ] leysa vandamálið með tenginginn.  
 [ ] klára lógíkina í leiknum og allt það.
 
 [ ] gera progress bar til að sjá árangur leikmanns
@@ -13,9 +18,8 @@
 
 ---
 
-## Næstu verkefni
+## Næstu verkefni:
 
- - Binding fyrir spinnerinn til að velja hversu margir leikmenn eru í leiknum
  - Láta leikinn virka 
     - finnaút afh kastið virkar ekki
     - finna út afh næsti maður breytist ekki

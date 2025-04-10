@@ -10,14 +10,12 @@ import vinnsla.View;
 import vinnsla.ViewSwitcher;
 
 public class SlangaController {
-    Game game = null;
+    Game game;
 
     static IntegerProperty players = new SimpleIntegerProperty();
     int rowsNCols = 5;
 
-    public void initialize() {
-     //players.bind(SettingController.fxPlayers.getValueFactory().valueProperty());
-    }
+    public void initialize() {}
 
     public void diceHandler(MouseEvent mouseEvent) {
         if (game == null) {
