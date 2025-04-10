@@ -20,7 +20,7 @@ public class SettingController {
 
     public void initialize() {
         fxDifficulty.getItems().addAll(Difficulty.getValues());
-        fxPlayers.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 5, 2));
+        fxPlayers.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 5, 3));
         fxTheme.getItems().addAll(Theme.getValues());
         fxPlayers.getValueFactory().valueProperty().bindBidirectional(SlangaController.players.asObject());
     }

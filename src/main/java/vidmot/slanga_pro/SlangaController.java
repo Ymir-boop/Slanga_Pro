@@ -12,11 +12,11 @@ import vinnsla.ViewSwitcher;
 public class SlangaController {
     Game game = null;
 
-    static IntegerProperty players = new SimpleIntegerProperty(5); // gerði þetta að property ekki viss hvort það þurfi
+    static IntegerProperty players = new SimpleIntegerProperty();
     int rowsNCols = 5;
 
     public void initialize() {
-     //   players.bind(SettingController.fxPlayers.valueProperty());
+     //players.bind(SettingController.fxPlayers.getValueFactory().valueProperty());
     }
 
     public void diceHandler(MouseEvent mouseEvent) {
@@ -32,6 +32,10 @@ public class SlangaController {
     //handlerar fyrir menu takka
     public void nyrHandler(ActionEvent actionEvent) {
         System.out.println("Nýr");
+        if (players.getValue() == 0){
+            game = new Game(rowsNCols, 1);
+            return;
+        }
         game = new Game(rowsNCols, players.get());
     }
     public void umHandler(ActionEvent actionEvent) {
