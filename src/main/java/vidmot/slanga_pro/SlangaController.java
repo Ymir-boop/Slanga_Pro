@@ -20,11 +20,11 @@ import java.util.List;
 
 public class SlangaController {
 
-    @FXML
-    public GridPane table;
+
 
     @FXML
     public ImageView fxDice;
+    @FXML
     public GridPane fxTable;
 
     private Game game;
@@ -34,34 +34,7 @@ public class SlangaController {
     int rowsNCols = 5;
 
 
-    public void initialize() {
-
-        // lúppur til að frumstilla gridpane -- ekki viss hvort þarf...
-//        for (int i = 0; i < rowsNCols; i++) {
-//            for (int j = 0; j < rowsNCols; j++) {
-//                table.add(new StackPane(), i, j);
-//
-//        }
-
-       // List<Node> tiles ;
-
-
-
-/*
-
-        // bindur myndir af teningunum við teninginn
-        String[] diceStyles = {"1", "2", "3", "4", "5", "6"};
-        game.getDice().getRollResultProperty().addListener((obs, oldVal, newVal) -> {
-            fxDice.getImage().getUrl().replaceFirst("\\d.png", newVal.intValue() + ".png");         //fixme þetta er kannski rétt en fæ error í keyrslu 'fxDice is null'
-
-            //            fxTeningur.getStyleClass().remove(teningaMyndir[gamlaGildi.intValue() - 1]);
-            //            fxTeningur.getStyleClass().add(teningaMyndir[nyttGildi.intValue() - 1]);
-        });
-
- */
-
-
-    }
+    public void initialize() {}
 
     private void makeBindings() {
         if (players != null) {
@@ -76,6 +49,15 @@ public class SlangaController {
                     fxTable.getChildren().get(nyttGildi.intValue() - 1).getStyleClass().add(plaeyerStyles[numberOfPlayer]);
                 });
             }
+        }
+        if (fxDice != null) {
+            String[] diceImg= {"images/dice/1.png ", "images/dice/2.png ", "images/dice/3.png ", "images/dice/4.png ", "images/dice/5.png ", "images/dice/6.png "};
+            game.getDice().getRollResultProperty().addListener((obs, oldVal, newVal) -> {
+                fxDice.getImage().getUrl().replaceFirst("\\d.png", diceImg[newVal.intValue()-1]);
+
+            });
+            //                        fxTeningur.getStyleClass().remove(teningaMyndir[gamlaGildi.intValue() - 1]);
+            //                        fxTeningur.getStyleClass().add(teningaMyndir[nyttGildi.intValue() - 1]);
         }
     }
 

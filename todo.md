@@ -7,7 +7,9 @@
 [x]Láta leikinn virka
 [x] klára lógíkina í leiknum og allt það.
 
-[ ] tengja stað leikmanns við reiti á borðinu
+[x] finna út hvernig á að tengja stað leikmanns við reiti á borðinu
+[ ] ganga frá því öllu og gera það clean
+[ ] láta fólkið hverfa þegar nýr leikur byrjar til dæmis...
 
 
 [ ] gera þemun  
