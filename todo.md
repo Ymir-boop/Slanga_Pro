@@ -7,9 +7,10 @@
 [x]Láta leikinn virka
 [x] klára lógíkina í leiknum og allt það.
 
-[x] finna út hvernig á að tengja stað leikmanns við reiti á borðinu
-[ ] ganga frá því öllu og gera það clean
-[ ] láta fólkið hverfa þegar nýr leikur byrjar til dæmis...
+[x] finna út hvernig á að tengja stað leikmanns við reiti á borðinu  
+[ ] ganga frá því öllu og gera það clean  
+[ ] láta fólkið hverfa þegar nýr leikur byrjar til dæmis...  
+[ ] laga teninginn - geri hann kannksi að botton bara  
 
 
 [ ] gera þemun  
@@ -27,7 +28,7 @@
 ## Næstu verkefni:
 
 
- - gera tengingu á það við viðmótið svo hreyfingin sjáist á borðinu
+ - gera tenginguna á hreyfingu kalla
  - tengja myndina á teningnum við kast tenings
 
 ## Vandamál

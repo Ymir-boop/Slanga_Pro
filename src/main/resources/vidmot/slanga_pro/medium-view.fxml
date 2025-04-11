@@ -3,10 +3,38 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.ProgressBar?>
 <BorderPane prefHeight="700.0" prefWidth="500.0" stylesheets="@../../css/styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.SlangaController">
 
     <top>
-        <fx:include source="menu-view.fxml" />
+<!--        <fx:include source="menu-view.fxml" />-->
+        <MenuBar >
+            <menus>
+                <Menu mnemonicParsing="false" text="Leikur">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#nyrHandler" text="Nýr leikur" />
+                        <MenuItem mnemonicParsing="false" onAction="#stillaHandler" text="Stillingar" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Hjálp">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#helpHandler" text="Leiðbeiningar" />
+                        <MenuItem mnemonicParsing="false" onAction="#umHandler" text="Um forritið" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Hætta">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#closeHandler" text="Hætta" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
     </top>
    <center>
        <GridPane fx:id="fxTable" gridLinesVisible="true" layoutX="37.0" layoutY="36.0" prefHeight="301.0" prefWidth="426.0">
@@ -25,6 +53,7 @@
                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
            </rowConstraints>
            <children>
+
                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.rowIndex="4" GridPane.columnIndex="0" />
                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.rowIndex="4" GridPane.columnIndex="1"  />
                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.rowIndex="4" GridPane.columnIndex="2"  />
@@ -64,6 +93,32 @@
        </GridPane>
    </center>
    <bottom>
-       <fx:include source="button-view.fxml" />
+<!--       <fx:include source="button-view.fxml" />-->
+       <HBox alignment="CENTER" prefHeight="200.0" prefWidth="714.0" stylesheets="@../../css/styles.css">
+           <children>
+               <VBox prefHeight="200.0" prefWidth="171.0">
+                   <children>
+                       <Label text="Chill guy á að gera" />
+                       <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                               <Image url="@../../css/images/characters/ChillGIF.gif" />
+                           </image></ImageView>
+                   </children></VBox>
+               <VBox prefHeight="200.0" prefWidth="213.0">
+                   <children>
+                       <Label text="Hér fær notandin skilaboð um leikinn" />
+                       <Label text="Hér getur hann fengið fleiri skilaboð" />
+                       <Label text="Hér er svo progress bar" />
+                       <ProgressBar prefWidth="200.0" progress="0.0" />
+                   </children>
+               </VBox>
+               <ImageView fx:id="fxDice" fitHeight="114.0" fitWidth="118.0" nodeOrientation="INHERIT" onMousePressed="#diceHandler" pickOnBounds="true" preserveRatio="true">
+                   <Image url="@../../css/images/dice/6.png" />
+                   <HBox.margin>
+                       <Insets right="10.0" />
+                   </HBox.margin>
+               </ImageView>
+           </children>
+       </HBox>
    </bottom>
 </BorderPane>

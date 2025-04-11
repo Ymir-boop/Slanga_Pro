@@ -53,7 +53,7 @@ public class SlangaController {
         if (fxDice != null) {
             String[] diceImg= {"images/dice/1.png ", "images/dice/2.png ", "images/dice/3.png ", "images/dice/4.png ", "images/dice/5.png ", "images/dice/6.png "};
             game.getDice().getRollResultProperty().addListener((obs, oldVal, newVal) -> {
-                fxDice.getImage().getUrl().replaceFirst("\\d.png", diceImg[newVal.intValue()-1]);
+                fxDice.getImage().getUrl().replaceFirst("images/dice/[1-6].png ", diceImg[newVal.intValue()-1]);
 
             });
             //                        fxTeningur.getStyleClass().remove(teningaMyndir[gamlaGildi.intValue() - 1]);

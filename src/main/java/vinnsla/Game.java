@@ -21,7 +21,7 @@ public class Game{
     public Game() {
     }
 
-    public Player getNextPlayer() {
+    public Player getNextPlayer() { // eyði ef ég nota ekkert
         return nextPlayer;
     }
 
