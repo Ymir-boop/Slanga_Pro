@@ -31,7 +31,7 @@ public class PlayerTest {
     public void testReset() {
         dice.roll();
         player.move(dice.getRollResult(), max);
-        assertTrue(player.getTile() > 0 && player.getTile() <= 6);
+        assertTrue(player.getTile() > 0 && player.getTile() <= 7);
         player.reset();
         assertEquals(1, player.getTile());
     }
