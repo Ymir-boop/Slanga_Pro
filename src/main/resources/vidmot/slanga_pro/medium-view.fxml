@@ -113,11 +113,7 @@
                        <ProgressBar prefWidth="200.0" progress="0.0" />
                    </children>
                </VBox>
-               <Button fx:id="fxDice" nodeOrientation="INHERIT" onMousePressed="#diceHandler" pickOnBounds="true" styleClass="dice-1" >
-                   <HBox.margin>
-                       <Insets right="10.0" />
-                   </HBox.margin>
-               </Button>
+               <Button fx:id="fxDice" nodeOrientation="INHERIT" onMousePressed="#diceHandler" pickOnBounds="true" styleClass="dice-1" />
            </children>
        </HBox>
    </bottom>

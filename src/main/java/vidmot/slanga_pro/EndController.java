@@ -6,6 +6,6 @@ import vinnsla.ViewSwitcher;
 
 public class EndController {
     public void onAftur(ActionEvent actionEvent) {
-        ViewSwitcher.switchTo(View.START_VIEW);
+        ViewSwitcher.switchTo(SlangaController.view);
     }
 }

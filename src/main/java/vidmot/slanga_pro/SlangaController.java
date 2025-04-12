@@ -50,6 +50,7 @@ public class SlangaController {
                 });
             }
         }
+
         if (fxDice != null) {
             String[] diceStyles = {"dice-1", "dice-2", "dice-3", "dice-4", "dice-5", "dice-6"};
             game.getDice().getRollResultProperty().addListener((obs, oldVal, newVal) -> {
@@ -79,6 +80,7 @@ public class SlangaController {
     public void nyrHandler(ActionEvent actionEvent) {
         System.out.println("Nýr");
         gameOver = false;
+        if (game != null) resetImg();
         if (players.getValue() == 0){
             game = new Game(rowsNCols, 1);
             makeBindings();
@@ -87,6 +89,19 @@ public class SlangaController {
         game = new Game(rowsNCols, players.get());
         makeBindings();
     }
+
+    private void resetImg() {
+        System.out.println("reset");
+        List<Node> tiles = fxTable.getChildren();
+        for (Node tile : tiles) {
+            tile.getStyleClass().remove("player1");
+            tile.getStyleClass().remove("player2");
+            tile.getStyleClass().remove("player3");
+            tile.getStyleClass().remove("player4");
+            tile.getStyleClass().remove("player5");
+        }
+    }
+
     public void umHandler(ActionEvent actionEvent) {
         System.out.println("Um");
     }
