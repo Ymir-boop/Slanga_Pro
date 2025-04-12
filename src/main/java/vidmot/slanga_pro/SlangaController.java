@@ -20,18 +20,18 @@ import java.util.List;
 
 public class SlangaController {
 
-
-
     @FXML
-    public ImageView fxDice;
+    public Button fxDice;
     @FXML
     public GridPane fxTable;
 
     private Game game;
     private boolean gameOver = true;
 
+    // lélegar static breytur en þægilegar. breyti þeim ef ég nenni
     static IntegerProperty players = new SimpleIntegerProperty();
-    int rowsNCols = 5;
+    static View view = View.MEDIUM_VIEW;
+    static int rowsNCols = 5;
 
 
     public void initialize() {}
@@ -51,14 +51,16 @@ public class SlangaController {
             }
         }
         if (fxDice != null) {
-            String[] diceImg= {"images/dice/1.png ", "images/dice/2.png ", "images/dice/3.png ", "images/dice/4.png ", "images/dice/5.png ", "images/dice/6.png "};
+            String[] diceStyles = {"dice-1", "dice-2", "dice-3", "dice-4", "dice-5", "dice-6"};
             game.getDice().getRollResultProperty().addListener((obs, oldVal, newVal) -> {
-                fxDice.getImage().getUrl().replaceFirst("images/dice/[1-6].png ", diceImg[newVal.intValue()-1]);
-
+                //fxDice.getImage().getUrl().replaceFirst("images/dice/[1-6].png ", diceImg[newVal.intValue()-1]);
+                fxDice.getStyleClass().remove(diceStyles[oldVal.intValue() - 1]);
+                fxDice.getStyleClass().add(diceStyles[newVal.intValue() - 1]);
             });
-            //                        fxTeningur.getStyleClass().remove(teningaMyndir[gamlaGildi.intValue() - 1]);
+            //fxTeningur.getStyleClass().remove(teningaMyndir[gamlaGildi.intValue() - 1]);
             //                        fxTeningur.getStyleClass().add(teningaMyndir[nyttGildi.intValue() - 1]);
         }
+
     }
 
 

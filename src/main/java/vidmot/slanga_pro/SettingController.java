@@ -27,23 +27,22 @@ public class SettingController {
 
     public void onSpila(ActionEvent actionEvent) {
         if (fxDifficulty.getValue() == null) {
-            System.out.println("Defaulting to medium");
-            ViewSwitcher.switchTo(View.MEDIUM_VIEW);
-            return;
+            System.out.println("Default difficulty selected");
+            ViewSwitcher.switchTo(SlangaController.view);
         }
         String val = fxDifficulty.getValue();
         if (val.equals(Difficulty.EASY.getMessage())) {
-            ViewSwitcher.switchTo(View.EASY_VIEW);
+            SlangaController.rowsNCols = 4;
+            SlangaController.view = View.EASY_VIEW;
         }
         else if (val.equals(Difficulty.MEDIUM.getMessage())) {
-            ViewSwitcher.switchTo(View.MEDIUM_VIEW);
+            SlangaController.rowsNCols = 5;
+            SlangaController.view = View.MEDIUM_VIEW;
         }
         else if (val.equals(Difficulty.HARD.getMessage())) {
-            ViewSwitcher.switchTo(View.HARD_VIEW);
+            SlangaController.rowsNCols = 6;
+            SlangaController.view = View.HARD_VIEW;
         }
-        else {
-            System.out.println("No difficulty selected");
-            ViewSwitcher.switchTo(View.MEDIUM_VIEW);
-        }
+        ViewSwitcher.switchTo(SlangaController.view);
     }
 }

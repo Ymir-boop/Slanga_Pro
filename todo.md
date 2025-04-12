@@ -12,9 +12,12 @@
 [ ] láta fólkið hverfa þegar nýr leikur byrjar til dæmis...  
 [ ] laga teninginn - geri hann kannksi að botton bara  
 
+[ ] láta leikinn virka fyrir hin borði...laga max
+
 
 [ ] gera þemun  
 [ ] gera dæmið sem tengir valið í settings við þema sem er birt
+[ ] og binda við eitthvað sem skiptir út stylesheet
 
 
 ### Aukadót:
