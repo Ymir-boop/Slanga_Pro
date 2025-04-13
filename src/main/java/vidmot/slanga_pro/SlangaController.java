@@ -8,10 +8,9 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
 import vinnsla.Game;
 import vinnsla.Player;
 import vinnsla.View;
@@ -28,10 +27,14 @@ public class SlangaController {
     @FXML
     public Label fxNextPlayerLabel;
     @FXML
-    public ImageView fxNextPlayerImg;
+    public Label fxNextPlayerImg;
+    @FXML
+    public BorderPane fxRoot;
 
     private Game game;
     private boolean gameOver = true;
+    private String[] playerStyles = {"player1", "player2", "player3", "player4", "player5"};
+    private int playerIndex = 0;
 
     // lélegar static breytur en þægilegar. breyti þeim ef ég nenni
     static IntegerProperty players = new SimpleIntegerProperty();
@@ -45,14 +48,13 @@ public class SlangaController {
     private void makeBindings() {
         if (players != null) {
         // bindur myndir leikmanna við reitina
-            String[] plaeyerStyles = {"player1", "player2", "player3", "player4", "player5"};
             Player[] players = game.getPlayers();
             for (int i = 0; i < players.length; i++) {
                 Player player = players[i];
                 final int numberOfPlayer = i;
                 player.getTileProperty().addListener((obs, gamlaGildi, nyttGildi) -> {
-                    fxTable.getChildren().get(gamlaGildi.intValue() - 1).getStyleClass().remove(plaeyerStyles[numberOfPlayer]);
-                    fxTable.getChildren().get(nyttGildi.intValue() - 1).getStyleClass().add(plaeyerStyles[numberOfPlayer]);
+                    fxTable.getChildren().get(gamlaGildi.intValue() - 1).getStyleClass().remove(playerStyles[numberOfPlayer]);
+                    fxTable.getChildren().get(nyttGildi.intValue() - 1).getStyleClass().add(playerStyles[numberOfPlayer]);
                 });
             }
         }
@@ -79,10 +81,18 @@ public class SlangaController {
             nyrHandler(null);
             return;
         }
+
         if (game.round()){
             gameOver = true;
             ViewSwitcher.switchTo(View.END_VIEW);
-        };
+            //resetta endcontroller einhvernveginn eða nota listener
+        }
+        if (players.getValue() != 0) {
+            playerIndex = (playerIndex + 1) % players.getValue();
+            fxNextPlayerImg.getStyleClass().clear();
+            fxNextPlayerImg.getStyleClass().add(playerStyles[playerIndex]);
+        }
+        fxNextPlayerLabel.setText(game.getNextPlayer().getName() + " á að gera");
     }
 
     //handlerar fyrir menu takka
@@ -110,11 +120,13 @@ public class SlangaController {
             tile.getStyleClass().remove("player4");
             tile.getStyleClass().remove("player5");
         }
+        fxNextPlayerImg.getStyleClass().clear();
     }
 
     public void umHandler(ActionEvent actionEvent) {
         System.out.println("Um");
     }
+
     public void stillaHandler(ActionEvent actionEvent) {
         System.out.println("Stillingar");
         ViewSwitcher.switchTo(View.SETTING_VIEW);
@@ -131,7 +143,7 @@ public class SlangaController {
 
     @FXML
     private void switchStyle() {
-        fxTable.getStylesheets().clear();
-        fxTable.getStylesheets().add(getClass().getResource(styleSheet).toExternalForm());
+        fxRoot.getStylesheets().clear();
+        fxRoot.getStylesheets().add(getClass().getResource(styleSheet).toExternalForm());
     }
 }

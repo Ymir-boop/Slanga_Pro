@@ -11,14 +11,14 @@ public class Game{
 
     private final Dice dice = new Dice();
     private final PlayerDialog playerDialog = new PlayerDialog();
+    private SnakesNLadders snakesNLadders;
 
     // hér er allt sem kemur að spilurum
     private Player[] players;
     private int playerAmount;
     private int indexOfPlayer = 0;
     private int i = 0;
-    private SnakesNLadders snakesNLadders;
-
+    private Player nextPlayer;
 
     // sé til hvort ég nota þetta
     public static String winner;
@@ -28,7 +28,7 @@ public class Game{
         return nextPlayer;
     }
 
-    private Player nextPlayer;
+
 
     public Game(int size, int playerAmount){
         System.out.println("Leikur hefst");

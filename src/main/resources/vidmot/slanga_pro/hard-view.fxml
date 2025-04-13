@@ -5,7 +5,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.SlangaController">
+<BorderPane fx:id="fxRoot" prefHeight="700.0" prefWidth="500.0" stylesheets="@../../css/classic.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.SlangaController">
     <children>
 
     </children>
@@ -35,7 +35,7 @@
         </MenuBar>
     </top>
     <center>
-        <GridPane fx:id="fxTable" gridLinesVisible="true" layoutX="37.0" layoutY="36.0" prefHeight="301.0" prefWidth="426.0" stylesheets="@../../css/classic.css">
+        <GridPane fx:id="fxTable" gridLinesVisible="true" layoutX="37.0" layoutY="36.0" prefHeight="301.0" prefWidth="426.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -214,11 +214,9 @@
             <children>
                 <VBox prefHeight="200.0" prefWidth="171.0">
                     <children>
-                        <Label text="Chill guy á að gera" />
-                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../../css/images/characters/ChillGIF.gif" />
-                            </image></ImageView>
+                        <Label fx:id="fxNextPlayerLabel" text="Ýttu á teninginn til að byrja" />
+                        <Label fx:id="fxNextPlayerImg" prefHeight="180.0" prefWidth="180.0" styleClass="player1" />
+
                     </children></VBox>
                 <VBox prefHeight="200.0" prefWidth="213.0">
                     <children>
@@ -228,7 +226,7 @@
                         <ProgressBar prefWidth="200.0" progress="0.0" />
                     </children>
                 </VBox>
-                <Button fx:id="fxDice" nodeOrientation="INHERIT" onMousePressed="#diceHandler" pickOnBounds="true" styleClass="dice-1" />
+                <Button fx:id="fxDice" onMousePressed="#diceHandler" styleClass="dice-1" />
             </children>
         </HBox>
     </bottom>

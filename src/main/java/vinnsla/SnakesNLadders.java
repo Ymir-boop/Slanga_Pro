@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class SnakesNLadders {
     private final HashMap<Integer, Integer> laddersNSnakes = new HashMap<Integer, Integer>();
 
-    public SnakesNLadders(int max) { // set svo upp system sem getur tekið inn stærð á borði og búið til mismunandi stiga eftir því
+    public SnakesNLadders(int max) {
         switch (max) {
             case 16:
                 // stigar

@@ -28,7 +28,8 @@
  - [ ] gera progress bar til að sjá árangur leikmanns  
  - [ ] gera um glugga sem opnast í menuinu  
  - [ ] gera leiðbeiningar glugga líka  
- - [ ] gera hætta skjá  
+ - [ ] gera hætta skjá 
+ - [ ] láta mynd fylgja á enda skjá 
 
 ---
 
@@ -48,3 +49,4 @@
 ## Vandamál
 
 - winner breytist ekki ef spilað er aftur
+- virkar ekki að gera cancel í dialognum
