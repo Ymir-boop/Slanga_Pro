@@ -17,10 +17,12 @@ public class Game{
     private int playerAmount;
     private int indexOfPlayer = 0;
     private int i = 0;
+    private SnakesNLadders snakesNLadders;
+
+
+    // sé til hvort ég nota þetta
     public static String winner;
 
-    public Game() {
-    }
 
     public Player getNextPlayer() { // eyði ef ég nota ekkert
         return nextPlayer;
@@ -31,6 +33,7 @@ public class Game{
     public Game(int size, int playerAmount){
         System.out.println("Leikur hefst");
         max = size * size;
+        snakesNLadders = new SnakesNLadders(max);
         this.playerAmount = playerAmount;
         players = new Player[playerAmount];
         for (int i = 0; i < playerAmount; i++){
@@ -59,7 +62,8 @@ public class Game{
         dice.roll();
         int result = dice.getRollResult();
         System.out.println("Result: " + result);
-        if (nextPlayer.move(dice.getRollResult(), max)) {
+        int landing = snakesNLadders.getLending(dice.getRollResult() + nextPlayer.getTile());
+        if (nextPlayer.move(landing, max)) {
             System.out.println(nextPlayer.getName() + " vinnur leikinn");
             winner = nextPlayer.getName();
             return true;

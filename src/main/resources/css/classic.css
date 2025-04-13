@@ -42,14 +42,30 @@
     -fx-background-repeat: no-repeat;
 }
 
-.StackPane {
-
+.ladder {
+    -fx-background-image: url("images/ladder.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
 }
 
-.GridPane {
-
+.snake {
+    -fx-background-image: url("images/snake.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
 }
 
-.label {
+.snake2 {
+    -fx-background-image: url("images/snake2.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
 
+.snake3 {
+    -fx-background-image: url("images/snake3.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
 }

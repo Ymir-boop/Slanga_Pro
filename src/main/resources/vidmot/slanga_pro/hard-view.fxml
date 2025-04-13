@@ -61,7 +61,7 @@
                <children>
                   <Label text="2" />
                </children></StackPane>
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="ladder" GridPane.columnIndex="2" GridPane.rowIndex="5">
                <children>
                   <Label text="3" />
                </children></StackPane>
@@ -82,7 +82,7 @@
                <children>
                   <Label text="7" />
                </children></StackPane>
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake" GridPane.columnIndex="4" GridPane.rowIndex="4">
                <children>
                   <Label text="8" />
                </children></StackPane>
@@ -107,7 +107,7 @@
                <children>
                   <Label text="13" />
                </children></StackPane>
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="ladder" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
                   <Label text="14" />
                </children></StackPane>
@@ -115,7 +115,7 @@
                <children>
                   <Label text="15" />
                </children></StackPane>
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake2" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <children>
                   <Label text="16" />
                </children></StackPane>
@@ -148,7 +148,7 @@
                <children>
                   <Label text="23" />
                </children></StackPane>
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake" GridPane.columnIndex="0" GridPane.rowIndex="2">
                <children>
                   <Label text="24" />
                </children></StackPane>
@@ -169,11 +169,11 @@
                <children>
                   <Label text="28" />
                </children></StackPane>
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="ladder" GridPane.columnIndex="4" GridPane.rowIndex="1">
                <children>
                   <Label text="29" />
                </children></StackPane>
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake3" GridPane.columnIndex="5" GridPane.rowIndex="1">
                <children>
                   <Label text="30" />
                </children></StackPane>
@@ -190,7 +190,7 @@
                <children>
                   <Label text="33" />
                </children></StackPane>
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake" GridPane.columnIndex="2" GridPane.rowIndex="0">
                <children>
                   <Label text="34" />
                </children></StackPane>
@@ -198,7 +198,7 @@
                <children>
                   <Label text="35" />
                </children></StackPane>
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="end">
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="end" GridPane.columnIndex="0" GridPane.rowIndex="0">
                <children>
                   <Label text="36" />
                </children></StackPane>

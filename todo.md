@@ -23,7 +23,7 @@
 
 
 ### Aukadót:
-
+ - [ ] láta leikmennina byrja á reit eitt
  - [ ] gera þannig að tveir leikmenn sjást á einum reit
  - [ ] gera progress bar til að sjá árangur leikmanns  
  - [ ] gera um glugga sem opnast í menuinu  
@@ -34,11 +34,16 @@
 
 ## Næstu verkefni:
  - gera þemun
+   - gera myndirnar með chat
+   - gera lit á bakgrunni
+   - 
  - gera upplýsingarnar hjá teningnum
    - myndina af næsta leikmanni
    - textann
    - skilaboðin
    - progressbar?
+ - ### Smáatriði:
+ - laga button svæðið í medium
 
 ## Vandamál
 

@@ -14,21 +14,58 @@
 }
 
 .player3 {
-    -fx-background-image: url("images/characters/player3.png ");
+    -fx-background-image: url("images/characters/Mbappe.png");
     -fx-background-size: 100% 100%;
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
 }
 
 .player4 {
-    -fx-background-image: url("images/characters/player4.png ");
+    -fx-background-image: url("images/characters/Haaland.png ");
     -fx-background-size: 100% 100%;
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
 }
 
 .player5 {
-    -fx-background-image: url("images/characters/player5.png ");
+    -fx-background-image: url("images/characters/Salah.png ");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+
+.end {
+    /*-fx-background-color: yellow;*/
+    -fx-background-image: url("images/trophy.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.ladder {
+    -fx-background-image: url("images/score.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.snake {
+    -fx-background-image: url("images/yellowCard.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.snake2 {
+    -fx-background-image: url("images/yellowCard.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.snake3 {
+    -fx-background-image: url("images/yellowCard.png");
     -fx-background-size: 100% 100%;
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;

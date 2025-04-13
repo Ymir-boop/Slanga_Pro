@@ -57,7 +57,7 @@
                <children>
                   <Label text="2" />
                </children></StackPane>
-               <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="ladder" GridPane.columnIndex="2" GridPane.rowIndex="4">
                <children>
                   <Label text="3" />
                </children></StackPane>
@@ -82,7 +82,7 @@
                <children>
                   <Label text="8" />
                </children></StackPane>
-               <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="ladder" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
                   <Label text="9" />
                </children></StackPane>
@@ -91,7 +91,7 @@
                   <Label text="10" />
                </children></StackPane>
 
-               <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+               <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake" GridPane.columnIndex="0" GridPane.rowIndex="2">
                <children>
                   <Label text="11" />
                </children></StackPane>
@@ -103,7 +103,7 @@
                <children>
                   <Label text="13" />
                </children></StackPane>
-               <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="ladder" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <children>
                   <Label text="14" />
                </children></StackPane>
@@ -120,7 +120,7 @@
                <children>
                   <Label text="17" />
                </children></StackPane>
-               <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake3" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
                   <Label text="18" />
                </children></StackPane>
@@ -145,11 +145,11 @@
                <children>
                   <Label text="23" />
                </children></StackPane>
-               <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="0">
+               <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake2" GridPane.columnIndex="3" GridPane.rowIndex="0">
                <children>
                   <Label text="24" />
                </children></StackPane>
-               <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="0" styleClass="end">
+               <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="end" GridPane.columnIndex="4" GridPane.rowIndex="0">
                <children>
                   <Label text="25" />
                </children></StackPane>
