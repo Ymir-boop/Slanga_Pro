@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
@@ -24,6 +25,10 @@ public class SlangaController {
     public Button fxDice;
     @FXML
     public GridPane fxTable;
+    @FXML
+    public Label fxNextPlayerLabel;
+    @FXML
+    public ImageView fxNextPlayerImg;
 
     private Game game;
     private boolean gameOver = true;
@@ -32,6 +37,7 @@ public class SlangaController {
     static IntegerProperty players = new SimpleIntegerProperty();
     static View view = View.MEDIUM_VIEW;
     static int rowsNCols = 5;
+    static String styleSheet = "/css/classic.css";
 
 
     public void initialize() {}
@@ -58,9 +64,12 @@ public class SlangaController {
                 fxDice.getStyleClass().remove(diceStyles[oldVal.intValue() - 1]);
                 fxDice.getStyleClass().add(diceStyles[newVal.intValue() - 1]);
             });
-            //fxTeningur.getStyleClass().remove(teningaMyndir[gamlaGildi.intValue() - 1]);
-            //                        fxTeningur.getStyleClass().add(teningaMyndir[nyttGildi.intValue() - 1]);
         }
+
+        // bindings fyrir mynd af þeim sem á að gera næst og nafn
+//        fxNextPlayerLabel.textProperty().bind(game.nextPlayerProperty().asString());
+//        fxNextPlayerImg.imageProperty().bind(game.nextPlayerProperty().asString().concat(".png"));
+
 
     }
 
@@ -81,6 +90,7 @@ public class SlangaController {
         System.out.println("Nýr");
         gameOver = false;
         if (game != null) resetImg();
+        switchStyle();
         if (players.getValue() == 0){
             game = new Game(rowsNCols, 1);
             makeBindings();
@@ -117,5 +127,11 @@ public class SlangaController {
         System.out.println("Hætta");
         Platform.exit();
         System.exit(0);
+    }
+
+    @FXML
+    private void switchStyle() {
+        fxTable.getStylesheets().clear();
+        fxTable.getStylesheets().add(getClass().getResource(styleSheet).toExternalForm());
     }
 }

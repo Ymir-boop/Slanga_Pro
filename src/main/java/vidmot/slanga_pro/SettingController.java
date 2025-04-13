@@ -26,9 +26,32 @@ public class SettingController {
     }
 
     public void onSpila(ActionEvent actionEvent) {
+
+        // velur þema
+        if (fxTheme.getValue() == null) {
+            SlangaController.styleSheet = "/css/classic.css";
+        }
+        else if (fxTheme.getValue().equals(Theme.CLASSIC.getMessage())) {
+            SlangaController.styleSheet = "/css/classic.css";
+        }
+        else if (fxTheme.getValue().equals(Theme.FOOTBALL.getMessage())) {
+            SlangaController.styleSheet = "/css/football.css";
+        }
+        else if (fxTheme.getValue().equals(Theme.CHESS.getMessage())) {
+            SlangaController.styleSheet = "/css/chess.css";
+        }
+        else if (fxTheme.getValue().equals(Theme.MONOPOLY.getMessage())) {
+            SlangaController.styleSheet = "/css/monopoly.css";
+        }
+        else if (fxTheme.getValue().equals(Theme.RANDOM.getMessage())) {
+            SlangaController.styleSheet = "/css/random.css";
+        }
+
+        // velur erfiðleikastig
         if (fxDifficulty.getValue() == null) {
             System.out.println("Default difficulty selected");
             ViewSwitcher.switchTo(SlangaController.view);
+            return;
         }
         String val = fxDifficulty.getValue();
         if (val.equals(Difficulty.EASY.getMessage())) {

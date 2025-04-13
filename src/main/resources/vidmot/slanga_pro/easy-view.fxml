@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.Button?>
-<BorderPane prefHeight="700.0" prefWidth="500.0" stylesheets="@../../css/styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.SlangaController">
+<BorderPane prefHeight="700.0" prefWidth="500.0" stylesheets="@../../css/classic.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.SlangaController">
     <children>
 
     </children>
@@ -55,25 +49,73 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="3">
+               <children>
+                  <Label text="1" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Label text="2" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <Label text="3" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <children>
+                  <Label text="4" />
+               </children></StackPane>
 
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <Label text="5" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Label text="6" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Label text="7" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+               <children>
+                  <Label text="8" />
+               </children></StackPane>
 
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <children>
+                  <Label text="9" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label text="10" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Label text="11" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <Label text="12" />
+               </children></StackPane>
 
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="0">
+               <children>
+                  <Label text="13" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="0">
+               <children>
+                  <Label text="14" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+               <children>
+                  <Label text="15" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <children>
+                  <Label text="16" />
+               </children></StackPane>
             </children>
             <padding>
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -82,7 +124,7 @@
     </center>
     <bottom>
 <!--        <fx:include source="button-view.fxml" />-->
-        <HBox alignment="CENTER" prefHeight="200.0" prefWidth="714.0" stylesheets="@../../css/styles.css">
+        <HBox alignment="CENTER" prefHeight="200.0" prefWidth="714.0" stylesheets="@../../css/dice.css">
             <children>
                 <VBox prefHeight="200.0" prefWidth="171.0">
                     <children>

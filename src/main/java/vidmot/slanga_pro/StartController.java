@@ -6,6 +6,6 @@ import vinnsla.View;
 public class StartController {
 
     public void onSpila() {
-        ViewSwitcher.switchTo(View.MEDIUM_VIEW);
+        ViewSwitcher.switchTo(SlangaController.view);
     }
 }

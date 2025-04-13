@@ -17,6 +17,7 @@ public class Game{
     private int playerAmount;
     private int indexOfPlayer = 0;
     private int i = 0;
+    public static String winner;
 
     public Game() {
     }
@@ -60,6 +61,7 @@ public class Game{
         System.out.println("Result: " + result);
         if (nextPlayer.move(dice.getRollResult(), max)) {
             System.out.println(nextPlayer.getName() + " vinnur leikinn");
+            winner = nextPlayer.getName();
             return true;
         }
         System.out.println(nextPlayer.getName() + " færðist á reit " + nextPlayer.getTile());
