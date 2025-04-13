@@ -1,58 +1,4 @@
 
-.dice-1 {
-    -fx-background-image: url("images/dice/1.png ");
-    -fx-background-size: 100% 100%;
-    -fx-background-position: center;
-    -fx-background-repeat: no-repeat;
-    -fx-pref-height: 100px;
-    -fx-pref-width: 100px;
-}
-
-.dice-2 {
-    -fx-background-image: url("images/dice/2.png ");
-    -fx-background-size: 100% 100%;
-    -fx-background-position: center;
-    -fx-background-repeat: no-repeat;
-    -fx-pref-height: 100px;
-    -fx-pref-width: 100px;
-}
-
-.dice-3 {
-    -fx-background-image: url("images/dice/3.png ");
-    -fx-background-size: 100% 100%;
-    -fx-background-position: center;
-    -fx-background-repeat: no-repeat;
-    -fx-pref-height: 100px;
-    -fx-pref-width: 100px;
-}
-
-.dice-4 {
-    -fx-background-image: url("images/dice/4.png ");
-    -fx-background-size: 100% 100%;
-    -fx-background-position: center;
-    -fx-background-repeat: no-repeat;
-    -fx-pref-height: 100px;
-    -fx-pref-width: 100px;
-}
-
-.dice-5 {
-    -fx-background-image: url("images/dice/5.png ");
-    -fx-background-size: 100% 100%;
-    -fx-background-position: center;
-    -fx-background-repeat: no-repeat;
-    -fx-pref-height: 100px;
-    -fx-pref-width: 100px;
-}
-
-.dice-6 {
-    -fx-background-image: url("images/dice/6.png ");
-    -fx-background-size: 100% 100%;
-    -fx-background-position: center;
-    -fx-background-repeat: no-repeat;
-    -fx-pref-height: 100px;
-    -fx-pref-width: 100px;
-}
-
 .player1 {
     -fx-background-image: url("images/characters/player1.png");
     -fx-background-size: 100% 100%;
@@ -88,18 +34,20 @@
     -fx-background-repeat: no-repeat;
 }
 
-.StackPane {
-    -fx-background-color: lightblue;
+.end {
+    /*-fx-background-color: yellow;*/
+    -fx-background-image: url("images/end.png");
     -fx-background-size: 100% 100%;
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
 }
 
+.StackPane {
+
+}
+
 .GridPane {
-    -fx-background-color: lightblue;
-    -fx-background-size: 100% 100%;
-    -fx-background-position: center;
-    -fx-background-repeat: no-repeat;
+
 }
 
 .label {

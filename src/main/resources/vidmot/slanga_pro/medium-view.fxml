@@ -149,7 +149,7 @@
                <children>
                   <Label text="24" />
                </children></StackPane>
-               <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="0">
+               <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="0" styleClass="end">
                <children>
                   <Label text="25" />
                </children></StackPane>
