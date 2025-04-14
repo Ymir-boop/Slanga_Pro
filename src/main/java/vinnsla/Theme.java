@@ -2,10 +2,7 @@ package vinnsla;
 
 public enum Theme {
     CLASSIC("Klassískt"),
-    FOOTBALL("Fótbolta"),
-    CHESS("Skák"),
-    MONOPOLY("Monopoly"),
-    RANDOM("Random");
+    FOOTBALL("Fótbolta");
 
     private String message;
 

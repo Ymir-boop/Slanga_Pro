@@ -10,14 +10,13 @@
  - [x] ganga frá því öllu og gera það clean  
  - [x] láta fólkið hverfa þegar nýr leikur byrjar til dæmis...  
  - [x] laga teninginn - geri hann kannksi að button bara
- - [x] láta leikinn virka fyrir hin borði...laga max
+ - [x] láta leikinn virka fyrir hin borðin...laga max
  - [x] gera dæmið sem tengir valið í settings við þema sem er birt
  - [x] og binda við eitthvað sem skiptir út stylesheet
  - [x] gera upplýsingarnar hjá teningnum
  - [x] gera myndina af næsta leikmanni
+ - [x] gera þemun 
 
-
- - [ ] gera þemun - eitt eftir  
 
  - [ ] bæta við skilaboða dæmið
 
@@ -28,23 +27,21 @@
  - [ ] gera um glugga sem opnast í menuinu  
  - [ ] gera leiðbeiningar glugga líka  
  - [ ] gera hætta skjá  
- - [ ] láta mynd fylgja á enda skjánnum og laga hann  
+ - [ ] láta mynd fylgja á enda skjánnum og laga  
 
 ---
 
 ## Næstu verkefni:
- - gera þemun
+ - Klára þemun
    - gera lit á bakgrunni
-   - gera skák
+   
+
  - gera upplýsingarnar hjá teningnum
    - skilaboðin
    - progressbar?
- - ### Smáatriði:
- - laga sumar myndir
- - 
 
 ## Vandamál
 
 - winner breytist ekki ef spilað er aftur
 - virkar ekki að gera cancel í dialognum
-- fjöldi leikmanna virðist ekki breytast ef spilað er aftur
+- fjöldi leikmanna virðist ekki breytast alltaf ef spilað er aftur eftir að breyta stillingum

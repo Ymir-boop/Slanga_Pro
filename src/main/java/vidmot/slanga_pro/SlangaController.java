@@ -40,7 +40,7 @@ public class SlangaController {
 
     private Game game;
     private boolean gameOver = true;
-    private String[] playerStyles = {"player1", "player2", "player3", "player4", "player5"};
+    private final String[] playerStyles = {"player1", "player2", "player3", "player4", "player5"};
     private int playerIndex = 0;
 
     // lélegar static breytur en þægilegar. breyti þeim ef ég nenni

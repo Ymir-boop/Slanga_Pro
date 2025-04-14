@@ -40,9 +40,6 @@ public class SettingController {
         else if (fxTheme.getValue().equals(Theme.FOOTBALL.getMessage())) {
             SlangaController.styleSheet = "/css/football.css";
         }
-        else if (fxTheme.getValue().equals(Theme.CHESS.getMessage())) {
-            SlangaController.styleSheet = "/css/chess.css";
-        }
 //        auka ef ég vil gera fleiri - þarf að taka úr comboboxinu líka
 //        else if (fxTheme.getValue().equals(Theme.MONOPOLY.getMessage())) {
 //            SlangaController.styleSheet = "/css/monopoly.css";
