@@ -75,6 +75,9 @@ public class SlangaController {
             });
         }
 
+        fxText1.textProperty().bind(game.getMessage1Property());
+        fxText2.textProperty().bind(game.getMessage2Property());
+
         // binidng fyrir progressbar sem virkar ekki alveg
         //fxProgressBar.progressProperty().bind(game.getNextPlayer().getTileProperty().divide(game.getMax()));
 

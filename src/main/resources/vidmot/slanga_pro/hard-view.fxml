@@ -220,10 +220,10 @@
                     </children></VBox>
                 <VBox prefHeight="200.0" prefWidth="213.0">
                     <children>
-                        <Label text="Hægt er að stilla leikinn" />
-                        <Label text="Stillingar má finna undir Leikur í menu" />
+                        <Label fx:id="fxText1" text="Hægt er að stilla leikinn" />
+                        <Label fx:id="fxText2" text="Stillingar má finna undir Leikur í menu" />
                         <Label text="Hér er svo progress bar" visible="false"/>
-                        <ProgressBar prefWidth="200.0" progress="0.0" visible="false"/>
+                        <ProgressBar fx:id="fxProgressBar" prefWidth="200.0" progress="0.0" visible="false" />
                     </children>
                 </VBox>
                 <Button fx:id="fxDice" onMousePressed="#diceHandler" styleClass="dice-1" />
