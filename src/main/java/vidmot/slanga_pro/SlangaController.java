@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
@@ -30,6 +31,12 @@ public class SlangaController {
     public Label fxNextPlayerImg;
     @FXML
     public BorderPane fxRoot;
+    @FXML
+    public Label fxText1;
+    @FXML
+    public Label fxText2;
+    @FXML
+    public ProgressBar fxProgressBar;
 
     private Game game;
     private boolean gameOver = true;
@@ -68,15 +75,14 @@ public class SlangaController {
             });
         }
 
-        // bindings fyrir mynd af þeim sem á að gera næst og nafn
-//        fxNextPlayerLabel.textProperty().bind(game.nextPlayerProperty().asString());
-//        fxNextPlayerImg.imageProperty().bind(game.nextPlayerProperty().asString().concat(".png"));
-
+        // binidng fyrir progressbar sem virkar ekki alveg
+        //fxProgressBar.progressProperty().bind(game.getNextPlayer().getTileProperty().divide(game.getMax()));
 
     }
 
 
     public void diceHandler(MouseEvent mouseEvent) {
+
         if (game == null || gameOver) {
             nyrHandler(null);
             return;
@@ -85,8 +91,10 @@ public class SlangaController {
         if (game.round()){
             gameOver = true;
             ViewSwitcher.switchTo(View.END_VIEW);
-            //resetta endcontroller einhvernveginn eða nota listener
+            //resetta endcontroller einhvernveginn eða nota listener?
         }
+
+        // breytir myndinni fyrir næsta leikmann
         if (players.getValue() != 0) {
             playerIndex = (playerIndex + 1) % players.getValue();
             fxNextPlayerImg.getStyleClass().clear();
@@ -120,7 +128,7 @@ public class SlangaController {
             tile.getStyleClass().remove("player4");
             tile.getStyleClass().remove("player5");
         }
-        fxNextPlayerImg.getStyleClass().clear();
+        //fxNextPlayerImg.getStyleClass().clear(); þetta er held ég óþarfi
     }
 
     public void umHandler(ActionEvent actionEvent) {

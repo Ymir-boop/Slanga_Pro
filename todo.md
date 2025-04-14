@@ -11,16 +11,15 @@
  - [x] láta fólkið hverfa þegar nýr leikur byrjar til dæmis...  
  - [x] laga teninginn - geri hann kannksi að button bara
  - [x] láta leikinn virka fyrir hin borði...laga max
+ - [x] gera dæmið sem tengir valið í settings við þema sem er birt
+ - [x] og binda við eitthvað sem skiptir út stylesheet
+ - [x] gera upplýsingarnar hjá teningnum
+ - [x] gera myndina af næsta leikmanni
 
 
- - [ ] gera þemun  
- - [ ] gera dæmið sem tengir valið í settings við þema sem er birt
- - [ ] og binda við eitthvað sem skiptir út stylesheet
+ - [ ] gera þemun - eitt eftir  
 
-
- - [ ] gera upplýsingarnar hjá teningnum
- - [ ] gera myndina af næsta leikmanni
-
+ - [ ] bæta við skilaboða dæmið
 
 ### Aukadót:
  - [ ] láta leikmennina byrja á reit eitt
@@ -28,25 +27,24 @@
  - [ ] gera progress bar til að sjá árangur leikmanns  
  - [ ] gera um glugga sem opnast í menuinu  
  - [ ] gera leiðbeiningar glugga líka  
- - [ ] gera hætta skjá 
- - [ ] láta mynd fylgja á enda skjá 
+ - [ ] gera hætta skjá  
+ - [ ] láta mynd fylgja á enda skjánnum og laga hann  
 
 ---
 
 ## Næstu verkefni:
  - gera þemun
-   - gera myndirnar með chat
    - gera lit á bakgrunni
-   - 
+   - gera skák
  - gera upplýsingarnar hjá teningnum
-   - myndina af næsta leikmanni
-   - textann
    - skilaboðin
    - progressbar?
  - ### Smáatriði:
- - laga button svæðið í medium
+ - laga sumar myndir
+ - 
 
 ## Vandamál
 
 - winner breytist ekki ef spilað er aftur
 - virkar ekki að gera cancel í dialognum
+- fjöldi leikmanna virðist ekki breytast ef spilað er aftur

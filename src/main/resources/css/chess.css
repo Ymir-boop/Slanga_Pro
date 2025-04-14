@@ -1,0 +1,73 @@
+
+
+.player1 {
+    -fx-background-image: url("images/characters/Ronaldo.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.player2 {
+    -fx-background-image: url("images/characters/Messi.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.player3 {
+    -fx-background-image: url("images/characters/Mbappe.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.player4 {
+    -fx-background-image: url("images/characters/Haaland.png ");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.player5 {
+    -fx-background-image: url("images/characters/Salah.png ");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+
+.end {
+    /*-fx-background-color: yellow;*/
+    -fx-background-image: url("images/trophy.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.ladder {
+    -fx-background-image: url("images/score.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.snake {
+    -fx-background-image: url("images/yellowCard.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.snake2 {
+    -fx-background-image: url("images/yellowCard.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.snake3 {
+    -fx-background-image: url("images/yellowCard.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}

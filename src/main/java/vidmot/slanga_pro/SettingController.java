@@ -19,10 +19,13 @@ public class SettingController {
     public ComboBox<String> fxTheme;
 
     public void initialize() {
+        // frumstillir combobox og spinner
         fxDifficulty.getItems().addAll(Difficulty.getValues());
         fxPlayers.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 5, 3));
         fxTheme.getItems().addAll(Theme.getValues());
-        fxPlayers.getValueFactory().valueProperty().bindBidirectional(SlangaController.players.asObject());
+
+        // binding fyrir fjölda leikmanna
+        fxPlayers.getValueFactory().valueProperty().bindBidirectional(SlangaController.players.asObject()); // kannski einhver villa í þessu?? gæti verið því að initialize keyrir bar einusinni?
     }
 
     public void onSpila(ActionEvent actionEvent) {
@@ -40,12 +43,13 @@ public class SettingController {
         else if (fxTheme.getValue().equals(Theme.CHESS.getMessage())) {
             SlangaController.styleSheet = "/css/chess.css";
         }
-        else if (fxTheme.getValue().equals(Theme.MONOPOLY.getMessage())) {
-            SlangaController.styleSheet = "/css/monopoly.css";
-        }
-        else if (fxTheme.getValue().equals(Theme.RANDOM.getMessage())) {
-            SlangaController.styleSheet = "/css/random.css";
-        }
+//        auka ef ég vil gera fleiri - þarf að taka úr comboboxinu líka
+//        else if (fxTheme.getValue().equals(Theme.MONOPOLY.getMessage())) {
+//            SlangaController.styleSheet = "/css/monopoly.css";
+//        }
+//        else if (fxTheme.getValue().equals(Theme.RANDOM.getMessage())) {
+//            SlangaController.styleSheet = "/css/random.css";
+//        }
 
         // velur erfiðleikastig
         if (fxDifficulty.getValue() == null) {

@@ -2,9 +2,6 @@ package vinnsla;
 
 import vidmot.slanga_pro.PlayerDialog;
 
-import java.nio.charset.StandardCharsets;
-import java.util.Scanner;
-
 public class Game{
 
     private int max;
@@ -86,5 +83,9 @@ public class Game{
 
     public Dice getDice() {
         return dice;
+    }
+
+    public int getMax() {
+        return max;
     }
 }
