@@ -17,7 +17,7 @@
             <url>LICENSE</url>
         </license>
     </licenses>
-    <url>https://github.com/Valurks/slonguspil-plusplus</url>
+    <url>https://github.com/Ymir-boop/Slanga_Pro</url>
 
     <organization>
         <name>University of Iceland</name>
@@ -46,12 +46,12 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>21</version>
+            <version>23.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>21</version>
+            <version>23.0.1</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -72,11 +72,18 @@
                     <target>21</target>
                 </configuration>
             </plugin>
-
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>vidmot.Main</mainClass>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.1.2</version> <!-- Nýjasta útgáfan -->
+                <version>3.5.3</version>
             </plugin>
 
             <plugin>
