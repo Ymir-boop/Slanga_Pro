@@ -47,8 +47,9 @@ Tilkynna má villur í síma 555 5555.
  - Prófaðu að velja nýjan leik á meðan leikurinn er enn í gangi.  
 
 ## Eignarréttur
-Eignarétt forritsins má finna undir LICENCE hér kemur linkur. [MIT license](LICENSE.md)
+Eignarétt forritsins má finna undir [LICENSE](LICENSE)
 
+# Hugbúnaðarhönnun
 
 ## Building
 

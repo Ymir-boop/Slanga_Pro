@@ -45,3 +45,14 @@
 - winner breytist ekki ef spilað er aftur
 - virkar ekki að gera cancel í dialognum
 - fjöldi leikmanna virðist ekki breytast alltaf ef spilað er aftur eftir að breyta stillingum
+
+### Hönnun
+
+- [ ] fá á hreint hvað á að testa
+- [ ] fá á hreint hvað á að vera í UML
+- [ ] fá á hreint með design pattern
+- [ ] fá á hreint með mvn site
+- [ ] finna út með jar
+- [ ] finna út með maven plugins
+- 
+

@@ -9,6 +9,35 @@
     <version>1.0-SNAPSHOT</version>
     <name>Slanga_Pro</name>
 
+    <description>A Snakes and Ladders game with up to 5 players</description>
+    <inceptionYear>2025</inceptionYear>
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>LICENSE</url>
+        </license>
+    </licenses>
+    <url>https://github.com/Valurks/slonguspil-plusplus</url>
+
+    <organization>
+        <name>University of Iceland</name>
+        <url>https://www.hi.is</url>
+    </organization>
+    <developers>
+        <developer>
+            <id>Ymir-Boop</id>
+            <name>Karl Ýmir Jóhannesson</name>
+            <email>kyj3@hi.is</email>
+            <organization>University of Iceland</organization>
+        </developer>
+        <developer>
+            <id>Mikkimatt</id>
+            <name>Mikael Matthíasson</name>
+            <email>mm37@hi.is</email>
+            <organization>University of Iceland</organization>
+        </developer>
+    </developers>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -51,6 +80,16 @@
             </plugin>
 
             <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.11.0</version>
+            </plugin>
+
+            <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
@@ -72,4 +111,20 @@
             </plugin>
         </plugins>
     </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.11.2</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>javadoc</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
