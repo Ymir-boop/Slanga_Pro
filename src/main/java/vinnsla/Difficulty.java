@@ -7,6 +7,10 @@ public enum Difficulty {
 
     private String message;
 
+    /**
+     * smiður fyrir Difficulty
+     * @param message skilaboð sem fara í comboboxið fyrir erfiðleikastigin
+     */
     Difficulty(String message)
     {
         this.message = message;
@@ -24,6 +28,10 @@ public enum Difficulty {
         return list;
     }
 
+    /**
+     * getter fyrir skilaboð hvers enum
+     * @return
+     */
     public String getMessage() {
         return message;
     }
