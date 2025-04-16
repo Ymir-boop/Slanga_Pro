@@ -34,9 +34,8 @@ public class DiceTest {
     }
 
     @Test
-    public void testEmpty() { // lögum þetta test
-        assertTrue(true);
-        //assertTrue (dice.getRollResult() == 0);
+    public void testEmpty() {
+        assertTrue (true);
     }
 
 }
