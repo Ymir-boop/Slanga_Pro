@@ -23,6 +23,11 @@ public class Game{
     // sé til hvort ég nota þetta
     public static String winner;
 
+    /**
+     * smiður sem býr til nýjan
+     * @param size
+     * @param playerAmount
+     */
     public Game(int size, int playerAmount){
         System.out.println("Leikur hefst");
         max = size * size;

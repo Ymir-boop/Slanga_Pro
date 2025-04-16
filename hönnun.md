@@ -4,15 +4,15 @@
 ## Hvað þarf að gera?
 
 - Git
-  - Allt komið held ég...
+  - Allt komið held ég
 
 
 - Maven
-  - mvn compile
+  - ~~- mvn compile~~
   - mvn test
-  - mvn exec:java
-  - mcn package
-  - mvn site
+  - mvn exec:java - skipt yfir í mvn javafx:run
+  - mvn package - þurfum fyrst að gera allt jar
+  - ~~mvn site~~
 
 
 - UML
