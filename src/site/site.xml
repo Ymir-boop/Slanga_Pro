@@ -1,0 +1,9 @@
+<!--Þarf kannski að breyta þessu-->
+<project>
+    <body>
+        <menu name="Overview">
+            <item name="Documentation" href="documentation.html" />
+        </menu>
+        <menu ref="reports" />
+    </body>
+</project>

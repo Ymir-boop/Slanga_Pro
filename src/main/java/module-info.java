@@ -5,4 +5,5 @@ module vidmot.slanga_pro {
 
     opens vidmot.slanga_pro to javafx.fxml;
     exports vidmot.slanga_pro;
+    exports vinnsla;
 }

@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane prefHeight="700.0" prefWidth="500.0" stylesheets="@../../css/styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.SlangaController">
+<BorderPane fx:id="fxRoot" prefHeight="700.0" prefWidth="500.0" stylesheets="@../../css/classic.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.SlangaController">
     <children>
 
     </children>
     <top>
-        <fx:include source="menu-view.fxml" />
+<!--        <fx:include source="menu-view.fxml" />-->
+        <MenuBar>
+
+            <menus>
+                <Menu mnemonicParsing="false" text="Leikur">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#nyrHandler" text="Nýr leikur" />
+                        <MenuItem mnemonicParsing="false" onAction="#stillaHandler" text="Stillingar" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Hjálp">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#helpHandler" text="Leiðbeiningar" />
+                        <MenuItem mnemonicParsing="false" onAction="#umHandler" text="Um forritið" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Hætta">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#closeHandler" text="Hætta" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
     </top>
     <center>
-        <GridPane fx:id="table" gridLinesVisible="true" layoutX="37.0" layoutY="36.0" prefHeight="301.0" prefWidth="426.0">
+        <GridPane fx:id="fxTable" gridLinesVisible="true" layoutX="37.0" layoutY="36.0" prefHeight="301.0" prefWidth="426.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -29,47 +53,155 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="5" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="5">
+               <children>
+                  <Label text="1" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <Label text="2" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="ladder" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <children>
+                  <Label text="3" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <children>
+                  <Label text="4" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <children>
+                  <Label text="5" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <children>
+                  <Label text="6" />
+               </children></StackPane>
 
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <children>
+                  <Label text="7" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <children>
+                  <Label text="8" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <children>
+                  <Label text="9" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Label text="10" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Label text="11" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="4">
+               <children>
+                  <Label text="12" />
+               </children></StackPane>
 
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="3">
+               <children>
+                  <Label text="13" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="ladder" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Label text="14" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <Label text="15" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake2" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <children>
+                  <Label text="16" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <children>
+                  <Label text="17" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <children>
+                  <Label text="18" />
+               </children></StackPane>
 
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <children>
+                  <Label text="19" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <children>
+                  <Label text="20" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <Label text="21" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Label text="22" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Label text="23" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake" GridPane.columnIndex="0" GridPane.rowIndex="2">
+               <children>
+                  <Label text="24" />
+               </children></StackPane>
 
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <children>
+                  <Label text="25" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label text="26" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Label text="27" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <Label text="28" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="ladder" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <children>
+                  <Label text="29" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake3" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <children>
+                  <Label text="30" />
+               </children></StackPane>
 
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="5" GridPane.rowIndex="0" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="0" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="5" GridPane.rowIndex="0">
+               <children>
+                  <Label text="31" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="4" GridPane.rowIndex="0">
+               <children>
+                  <Label text="32" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="3" GridPane.rowIndex="0">
+               <children>
+                  <Label text="33" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="snake" GridPane.columnIndex="2" GridPane.rowIndex="0">
+               <children>
+                  <Label text="34" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+               <children>
+                  <Label text="35" />
+               </children></StackPane>
+                <StackPane prefHeight="301.0" prefWidth="426.0" styleClass="end" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <children>
+                  <Label text="36" />
+               </children></StackPane>
             </children>
             <padding>
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -77,6 +209,25 @@
         </GridPane>
     </center>
     <bottom>
-        <fx:include source="button-view.fxml" />
+<!--        <fx:include source="button-view.fxml" />-->
+        <HBox alignment="CENTER" prefHeight="200.0" prefWidth="714.0" stylesheets="@../../css/dice.css">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="171.0">
+                    <children>
+                        <Label fx:id="fxNextPlayerLabel" text="Ýttu á teninginn til að byrja" />
+                        <Label fx:id="fxNextPlayerImg" prefHeight="180.0" prefWidth="180.0" styleClass="player1" />
+
+                    </children></VBox>
+                <VBox prefHeight="200.0" prefWidth="213.0">
+                    <children>
+                        <Label fx:id="fxText1" text="Hægt er að stilla leikinn" />
+                        <Label fx:id="fxText2" text="Stillingar má finna undir Leikur í menu" />
+                        <Label text="Hér er svo progress bar" visible="false"/>
+                        <ProgressBar fx:id="fxProgressBar" prefWidth="200.0" progress="0.0" visible="false" />
+                    </children>
+                </VBox>
+                <Button fx:id="fxDice" onMousePressed="#diceHandler" styleClass="dice-1" />
+            </children>
+        </HBox>
     </bottom>
 </BorderPane>

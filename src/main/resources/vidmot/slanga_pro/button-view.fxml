@@ -5,9 +5,10 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<ButtonBar prefHeight="200.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.slanga_pro.SlangaController">
+<ButtonBar prefHeight="200.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" >
+<!--           fx:controller="vidmot.slanga_pro.SlangaController">-->
    <buttons>
-      <HBox alignment="CENTER" prefHeight="200.0" prefWidth="714.0" stylesheets="@../../css/styles.css">
+      <HBox alignment="CENTER" prefHeight="200.0" prefWidth="714.0" stylesheets="@../../css/classic.css">
          <children>
             <VBox prefHeight="200.0" prefWidth="171.0">
                <children>

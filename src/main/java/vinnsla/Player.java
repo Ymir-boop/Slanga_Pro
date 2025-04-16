@@ -16,12 +16,11 @@ public class Player extends Pane {
     }
 
     /**
-     * @param roll kast
+     * @param landing kast
      * @param max
      * @return skilar true ef leikurinn klárast.
      */
-    public boolean move(int roll, int max) { // þarf að breyta tests núna FIXME
-        int landing = this.tile.get() + roll;
+    public boolean move(int landing, int max) { // þarf að breyta tests núna FIXME
         if (landing >= max){
             this.tile.set(max);
             return true;

@@ -5,7 +5,7 @@ import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
 public class Dice {
-    private static final SimpleIntegerProperty rollResult = new SimpleIntegerProperty();
+    private static final SimpleIntegerProperty rollResult = new SimpleIntegerProperty(1);
     private static final int MAX = 6;
 
     /**
