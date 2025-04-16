@@ -48,3 +48,7 @@ Tilkynna má villur í síma 555 5555.
 
 ## Eignarréttur
 Eignarétt forritsins má finna undir [LICENSE](LICENSE)
+
+# Hugbúnaðarhönnun
+
+notum ``` mvn javafx:run ``` í stað mvn exec:java því þetta er javafx forrit.
