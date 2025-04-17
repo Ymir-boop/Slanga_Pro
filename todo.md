@@ -45,9 +45,10 @@
 - winner breytist ekki ef spilað er aftur
 - virkar ekki að gera cancel í dialognum
 - fjöldi leikmanna virðist ekki breytast alltaf ef spilað er aftur eftir að breyta stillingum
+---
+# Hönnun
 
-### Hönnun
-
+### TODO list:
 - [ ] klára að gera tests
 - [ ] klára að gera UML
 - [x] fá á hreint með design pattern
@@ -57,4 +58,12 @@
 - [ ] klára að gera javadocs
 - [ ] klára að gera refactoring
 - [ ] klára að gera design patterns
+
+### Næst á dagskrá:
+
+- gera javadoc á allt
+- refactora
+- gera design pattern á game
+- gera tests fyrir player, dice og snakesNLadders
+- gera UML
 

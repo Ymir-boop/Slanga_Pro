@@ -12,6 +12,11 @@ import java.io.IOException;
 
 public class SlangaApplication extends Application {
 
+    /**
+     * start aðferð sem keyrir forritið
+     * @param stage gluggi
+     * @throws IOException villa
+     */
     @Override
     public void start(Stage stage) throws IOException {
         var scene = new Scene(new Pane(), 500, 700);
@@ -22,7 +27,10 @@ public class SlangaApplication extends Application {
         stage.show();
     }
 
-
+    /**
+     * main aðferð sem keyrir forritið
+     * @param args ónotað
+     */
     public static void main(String[] args) {
         launch();
     }

@@ -50,10 +50,6 @@
 
 gera facade fyrir game
 
-finna út með site wtffffffffffff
-
-gera jar dæmið. kannkski copya frá hjölla
-
 gera javadocs fyrir allt dótið
 
 gera uml'ið - setja inn öll enumin

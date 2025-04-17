@@ -27,7 +27,7 @@ public enum View {
 
     /**
      * getter fyrir nafn skráar
-     * @return nafni skráar
+     * @return skilar nafni skráar
      */
     public String getFileName() {
         return fileName;

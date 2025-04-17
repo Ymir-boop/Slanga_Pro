@@ -5,6 +5,9 @@ public enum Difficulty {
     MEDIUM("Miðlungs"),
     HARD("Erfitt");
 
+    /**
+     * skilaboð sem fara í comboboxið
+     */
     private String message;
 
     /**
