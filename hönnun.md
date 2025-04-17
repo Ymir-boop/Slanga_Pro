@@ -4,7 +4,6 @@
 ## Hvað þarf að gera?
 
 - Git
-  - Allt komið held ég...
 
 
 - Maven
@@ -23,7 +22,6 @@
 - Design patterns
   - Finna gott design
   - útfæra í forritinu
-  - spurja hversu mikið...
 
 
 - Refactoring
@@ -36,7 +34,7 @@
 
 
 - Documentation
-  - Licence
+  - License
   - README
     - fer yfir packaging og running
     - links á önnur md með design documentation
@@ -47,13 +45,13 @@
   - support í pom fyrir design documentation
 ---
 
-### plan
+### Plan
 
 gera facade fyrir game
 
-finna út með site wtffffffffffff
+finna út með site 
 
-gera jar dæmið. kannkski copya frá hjölla
+gera jar dæmið
 
 gera javadocs fyrir allt dótið
 

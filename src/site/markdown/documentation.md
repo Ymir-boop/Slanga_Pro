@@ -1,11 +1,11 @@
 # Hönnun
 
----
+
 ## UML
 
 Hér að neðan má sjá UML klasa skýringarmynd fyrir forritið:
 
-![UML](uml.png)
+![UML](UML.png)
 
 ## Hönnunarmynstur
 
@@ -16,14 +16,14 @@ Tilgangurinn er að búa til einfalda hlið á flóknu undirkerfi.
 
 Við notum þetta mynstur í Game klasanum okkar eins og sjá má á UML skýringarmyndinni hér að ofan.  
 Klasinn virðist kannski ekki vera einfaldur við fyrstu sýn en hann er í grunninn bara með eina aðferð sem notandinn sér.  
-Allt annað eru hjálparaðferðir sem vinna með undirklösu, og viðmótsklösum.
+Allt annað eru hjálparaðferðir sem vinna með undirklösum eða viðmótsklösum forritsins.
 
 Þetta mynstur gerir vinnsluhluta forritsins mun einfaldari.
 
 ### Observer mynstur
 
 [Observer](https://sourcemaking.com/design_patterns/observer) mynstur eða áhorfanda mynstur er mynstur þar sem einn klasi fylgist með öðrum í þeim tilgangi að uppfærast í samræmi við hann.  
-Þetta er afar hentugt í viðmótsklösum forrits sem fylgist með vinnsluklösum þess.  
+Þetta er afar hentugt í viðmótsklösum forrits sem fylgjast með vinnsluklösum þess.  
 
 Við notum þetta mynstur í viðmótsklösum forritsins hér til þess að uppfæra stöðu leikmanna á borðinu til dæmis.  
 Við notum þetta einnig til að sýna með mynd hvað kemur upp á teningnum eftir að honum er kastað.  

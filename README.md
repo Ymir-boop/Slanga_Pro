@@ -42,12 +42,11 @@ Tilkynna má villur í síma 555 5555.
  - Farðu í stillingar og breyttu stillingunum. Veldu þrjá leikmenn.  
  - Breyttu stillingunum enn frekar. Veldu létta borðið og líka þema. Spilaðu svo leikinn aftur.  
  - Farðu nú í stillingar á ný og veldu erfiða borðið. Prófaðu það.  
- - Prófaðu að velja nýjan leik á meðan leikurinn er enn í gangi.  
+ - Prófaðu að velja nýjan leik á meðan leikurinn er enn í gangi.
 
-## Eignarréttur
-Eignarétt forritsins má finna undir [LICENSE](LICENSE)
+---
 
-# Hugbúnaðarhönnun
+# Hugbúnaðarhönnun - Software Construction Project
 
 ## Maven leiðbeiningar
 Maven samþykkir þessar skipanir:  
@@ -83,7 +82,7 @@ Einnig er hægt að pakka forritinu með skriptunni [.\build.cmd](build.cmd) í 
 
 og keyra með skriptunni [.\run.cmd](run.cmd) ef þú ert ekki með forritunarumhverfi með Maven innbygðu.
 
-### Hönnun
+## Hönnun
 
 Við fylgjum [facade](https://en.wikipedia.org/wiki/Facade_pattern) hönnunarmynstrinu í [Game](src/main/java/vinnsla/Game.java) klasanum.  
 Game einfaldar og umlykur (encapsulates) undirkerfið [Player](src/main/java/vinnsla/Player.java), [Dice](src/main/java/vinnsla/Dice.java) og [SnakesNLadders](src/main/java/vinnsla/SnakesNLadders.java).
@@ -91,3 +90,7 @@ Game einfaldar og umlykur (encapsulates) undirkerfið [Player](src/main/java/vin
 Einnig notum við [observer](https://en.wikipedia.org/wiki/Observer_pattern) hönnun í viðmótsklösum forritsins sem fylgjast þannig með vinnsluklösum þess.
 
 Finna má meira um hönnun forritsins [hér](src/site/markdown/documentation.md).
+Og hér er [UML](src/site/resources/UML.png) skýringarmynd fyrir forritið.
+
+## Eignarréttur
+Eignarétt forritsins má finna undir [LICENSE](LICENSE)
