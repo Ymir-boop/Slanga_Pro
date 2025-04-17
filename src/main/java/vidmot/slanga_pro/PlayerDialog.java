@@ -15,13 +15,12 @@ public class PlayerDialog {
     @FXML
     private TextField nameField;
     @FXML
-    private ColorPicker colorField;
-    @FXML
-    private TextField imageField;
-
     private Dialog<Player> dialog;
-    private Player player;
 
+    /**
+     * smiður fyrir PlayerDialog sem frumstillir takkana
+     * býr til leikmann eftir að dialog er lokað
+     */
     public PlayerDialog() {
         dialog = new Dialog<Player>();
         dialog.setTitle("Bættu inn leikmanni");
@@ -44,12 +43,19 @@ public class PlayerDialog {
 
     }
 
+    /**
+     * aðferð sem opnar dialoginn og tekur inn nafn sem String
+     * leikmaður verður til út frá nafninu
+     * @return skilar leikmanninum sem hefur orðið til
+     */
     public Player open() {
         resetFields();
         return dialog.showAndWait().orElse(null);
     }
 
-
+    /**
+     * aðferð sem frumstillir dialoginn með fxml skrá
+     */
     private void loadFXML() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("dialog-view.fxml"));
@@ -60,10 +66,11 @@ public class PlayerDialog {
         }
     }
 
+    /**
+     * aðferð sem núllstillir dialoginn í upphafi
+     */
     private void resetFields() {
         nameField.setText("");
-        if (colorField != null) colorField.setValue(Color.BLACK);     // or use a default color like Color.BLUE
-        if (imageField != null) imageField.setText("");
     }
 
 

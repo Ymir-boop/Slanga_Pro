@@ -5,14 +5,7 @@
 
 <GridPane hgap="10" vgap="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
     <Label text="Nafn:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-
     <TextField fx:id="nameField" promptText="Sláðu inn nafn leikmanns" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-
-    <Label text="Color:" GridPane.columnIndex="0" GridPane.rowIndex="1" visible="false"/>
-    <ColorPicker fx:id="colorField" promptText="Color" GridPane.columnIndex="1" GridPane.rowIndex="1" visible="false"/>
-
-    <Label text="Image:" GridPane.columnIndex="0" GridPane.rowIndex="2" visible="false" />
-    <TextField fx:id="imageField" GridPane.columnIndex="1" GridPane.rowIndex="2" visible="false"/>
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />

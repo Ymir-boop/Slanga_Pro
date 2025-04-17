@@ -18,6 +18,9 @@ public class SettingController {
     @FXML
     public ComboBox<String> fxTheme;
 
+    /**
+     * upphafsaðferð sem frumstillir viðmótshluti og bindings
+     */
     public void initialize() {
         // frumstillir combobox og spinner
         fxDifficulty.getItems().addAll(Difficulty.getValues());
@@ -28,31 +31,29 @@ public class SettingController {
         fxPlayers.getValueFactory().valueProperty().bindBidirectional(SlangaController.players.asObject()); // kannski einhver villa í þessu?? gæti verið því að initialize keyrir bar einusinni?
     }
 
+    /**
+     * handler sem bregst við þegar fara á úr stillingum í leikinn aftur
+     * setur þema og erfiðleikastig
+     * @param actionEvent event
+     */
     public void onSpila(ActionEvent actionEvent) {
 
-        // velur þema
-        if (fxTheme.getValue() == null) {
-            SlangaController.styleSheet = "/css/classic.css";
-        }
-        else if (fxTheme.getValue().equals(Theme.CLASSIC.getMessage())) {
-            SlangaController.styleSheet = "/css/classic.css";
-        }
-        else if (fxTheme.getValue().equals(Theme.FOOTBALL.getMessage())) {
-            SlangaController.styleSheet = "/css/football.css";
-        }
-//        auka ef ég vil gera fleiri - þarf að taka úr comboboxinu líka
-//        else if (fxTheme.getValue().equals(Theme.MONOPOLY.getMessage())) {
-//            SlangaController.styleSheet = "/css/monopoly.css";
-//        }
-//        else if (fxTheme.getValue().equals(Theme.RANDOM.getMessage())) {
-//            SlangaController.styleSheet = "/css/random.css";
-//        }
+        setTheme();
 
-        // velur erfiðleikastig
+        if (setDifficulty()) return;
+
+        ViewSwitcher.switchTo(SlangaController.view);
+    }
+
+    /**
+     * setur erfiðleikastig
+     * @return skilar true ef ekkert var valið annars false
+     */
+    private boolean setDifficulty() {
         if (fxDifficulty.getValue() == null) {
             System.out.println("Default difficulty selected");
             ViewSwitcher.switchTo(SlangaController.view);
-            return;
+            return true;
         }
         String val = fxDifficulty.getValue();
         if (val.equals(Difficulty.EASY.getMessage())) {
@@ -67,6 +68,21 @@ public class SettingController {
             SlangaController.rowsNCols = 6;
             SlangaController.view = View.HARD_VIEW;
         }
-        ViewSwitcher.switchTo(SlangaController.view);
+        return false;
+    }
+
+    /**
+     * setur þema eftir vali
+     */
+    private void setTheme() {
+        if (fxTheme.getValue() == null) {
+            SlangaController.styleSheet = "/css/classic.css";
+        }
+        else if (fxTheme.getValue().equals(Theme.CLASSIC.getMessage())) {
+            SlangaController.styleSheet = "/css/classic.css";
+        }
+        else if (fxTheme.getValue().equals(Theme.FOOTBALL.getMessage())) {
+            SlangaController.styleSheet = "/css/football.css";
+        }
     }
 }

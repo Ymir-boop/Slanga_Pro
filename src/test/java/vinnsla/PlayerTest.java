@@ -7,7 +7,7 @@ import org.junit.Test;
 public class PlayerTest {
 
     private Player player;
-    private Dice dice;
+    private  Dice dice;
     private int max;
 
     @Before
@@ -15,27 +15,6 @@ public class PlayerTest {
         player = new Player("Hans");
         dice = new Dice();
         max = 25;
-    }
-
-    /* @Test
-    public void testMove() {
-        dice.roll();
-        player.move(dice.getRollResult(), max);
-        assertTrue(player.getTile() > 0 && player.getTile() <= 6);
-        dice.roll();
-        player.move(dice.getRollResult(), max);
-        assertTrue(player.getTile() >= 2 && player.getTile() <= 12);
-    }
-
-     */
-
-    @Test
-    public void testReset() {
-        dice.roll();
-        player.move(dice.getRollResult(), max);
-        assertTrue(player.getTile() > 0 && player.getTile() <= 7);
-        player.reset();
-        assertEquals(1, player.getTile());
     }
 
     @Test
@@ -48,6 +27,29 @@ public class PlayerTest {
         assertEquals(1, player.getTile());
     }
 
+    @Test
+    public void testMove() {
+        dice.roll();
+        int initialTile = player.getTile();
+        int rollResult = dice.getRollResult();
+        int landing = player.getLanding(rollResult);
+        player.move(landing, max);
 
+        assertEquals(rollResult + initialTile, player.getTile());
+    }
 
+    @Test
+    public void testMoveTillMax() {
+        int allRolls = 0;
+
+        while (player.getTile() < max) {
+            assertEquals(allRolls + 1, player.getTile());
+            dice.roll();
+            int rollResult = dice.getRollResult();
+            allRolls += rollResult;
+            int landing = player.getLanding(rollResult);
+            player.move(landing, max);
+        }
+        assertEquals(max, player.getTile());
+    }
 }

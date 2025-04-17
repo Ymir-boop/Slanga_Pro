@@ -11,7 +11,7 @@
   - mvn compile
   - mvn test
   - mvn exec:java
-  - mvn package
+  - mcn package
   - mvn site
 
 

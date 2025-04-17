@@ -4,8 +4,15 @@ public enum Theme {
     CLASSIC("Klassískt"),
     FOOTBALL("Fótbolta");
 
+    /**
+     * skilaboð sem fara í comboboxið fyrir þema
+     */
     private String message;
 
+    /**
+     * smiður fyrir þemun
+     * @param message skilaboðin sem þau geyma
+     */
     Theme(String message)
     {
         this.message = message;
@@ -23,6 +30,10 @@ public enum Theme {
         return list;
     }
 
+    /**
+     * getter fyrir skilaboðin sem fara í comboboxið
+     * @return skilaboð
+     */
     public String getMessage() {
         return message;
     }

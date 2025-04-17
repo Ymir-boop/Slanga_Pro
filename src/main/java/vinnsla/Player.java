@@ -2,25 +2,26 @@ package vinnsla;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.scene.layout.Pane;
 
 
-public class Player extends Pane {
-    private SimpleIntegerProperty tile = new SimpleIntegerProperty();
-    private final SimpleStringProperty name = new SimpleStringProperty(); // kannski óþarfi að hafa þetta sem property
+
+public class Player {
+    private final SimpleIntegerProperty tile = new SimpleIntegerProperty();
+    private final String name;
 
     public Player(String name) {
-        this.name.set(name);
+        this.name = name;
         tile.set(1);
     }
 
     /**
-     * @param landing kast
-     * @param max
+     * aðferð sem færir leikmann á þann reit sem hann á að fara
+     * skilar true ef leikurinn klárast
+     * @param landing lending leikmannsins
+     * @param max númer síðasta reits í leiknum
      * @return skilar true ef leikurinn klárast.
      */
-    public boolean move(int landing, int max) { // þarf að breyta tests núna FIXME
+    public boolean move(int landing, int max) {
         if (landing >= max){
             this.tile.set(max);
             return true;
@@ -29,26 +30,44 @@ public class Player extends Pane {
         return false;
     }
 
-    public void reset() {
-        this.tile.set(1);
-    }
-
+    /**
+     * getter fyrir reit leikmanns
+     * @return reit leikmanns
+     */
     public int getTile() {
         return tile.get();
     }
 
+    /**
+     * getter fyrir reit leikmanns sem property
+     * hentugt að nota fyrir bindings í viðmóti
+     * @return reit leikmanns sem property
+     */
     public IntegerProperty getTileProperty() {
         return tile;
     }
 
+    /**
+     * getter fyri nafn leikmanns
+     * @return nafn leikmanns
+     */
     public String getName() {
-        return name.get();
+        return name;
     }
 
-//    public SimpleIntegerProperty stadaProperty() {  gæti verið hentugt í bindings fyrir leikmennina
-//        return stada;
-//    }
+    /**
+     * hjálparaðferð fyrir testing
+     * @param rollResult tekur inn kast
+     * @return skilar landing
+     */
+    public int getLanding(int rollResult) {
+        return tile.get() + rollResult;
+    }
 
+    /**
+     * main aðferð sem prófar leikmann klasann
+     * @param args ónotað
+     */
     public static void main(String[] args) {
         Player player = new Player("Hans");
         Dice dice = new Dice();
@@ -59,7 +78,6 @@ public class Player extends Pane {
         System.out.println(player.getName() + " færðist á reit " + player.getTile());
         player.move(5, max);
         System.out.println(player.getName() + " færðist á reit " + player.getTile());
-        player.reset();
         System.out.println(player.getName() + " færðist á reit " + player.getTile());
     }
 }

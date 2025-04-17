@@ -13,6 +13,7 @@ public class DiceTest {
         dice = new Dice();
     }
 
+
     @Test
     public void testRoll() {
         dice.roll();
@@ -33,9 +34,5 @@ public class DiceTest {
         assertTrue (result > oldResult);
     }
 
-    @Test
-    public void testEmpty() {
-        assertTrue (true);
-    }
 
 }

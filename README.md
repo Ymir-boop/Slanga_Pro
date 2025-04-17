@@ -51,4 +51,20 @@ Eignarétt forritsins má finna undir [LICENSE](LICENSE)
 
 # Hugbúnaðarhönnun
 
+### Maven leiðbeiningar
+
 notum ``` mvn javafx:run ``` í stað mvn exec:java því þetta er javafx forrit.
+
+### FatJAR - package
+
+compile 
+
+build
+
+run
+
+### Design patterns
+
+Notum facade hönnunarmynstur í Game klasanum.  
+Game einfaldar og umlykur (encapsulates) hið flókna undirkerfi Player, Dice og SnakesNLadders.
+player, dice og snakesNLadders.
