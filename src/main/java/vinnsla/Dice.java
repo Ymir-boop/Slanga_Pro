@@ -38,6 +38,7 @@ public class Dice {
      */
     public static void main (String[] args) {
         Dice t = new Dice();
+        System.out.println(t.getRollResult());
         t.roll();
         System.out.println(t.getRollResult());
     }

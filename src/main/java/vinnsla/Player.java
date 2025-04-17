@@ -56,6 +56,15 @@ public class Player {
     }
 
     /**
+     * hjálparaðferð fyrir testing
+     * @param rollResult tekur inn kast
+     * @return skilar landing
+     */
+    public int getLanding(int rollResult) {
+        return tile.get() + rollResult;
+    }
+
+    /**
      * main aðferð sem prófar leikmann klasann
      * @param args ónotað
      */
