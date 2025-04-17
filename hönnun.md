@@ -9,10 +9,10 @@
 
 - Maven
   - ~~- mvn compile~~
-  - mvn test
-  - mvn exec:java - skipt yfir í mvn javafx:run
-  - mvn package - þurfum fyrst að gera allt jar
-  - ~~mvn site~~
+  - ~~mvn test~~  - laga testin
+  - ~~mvn exec:java~~ - skipt yfir í mvn javafx:run
+  - ~~mvn package~~ - fat jar líka komið
+  - ~~mvn site~~ - 
 
 
 - UML
@@ -32,7 +32,6 @@
 
 - Jar
   - gera jar og nota shell script til að gera það endurtekið...
-  - mikki tekur þetta líklega
 
 
 - Documentation

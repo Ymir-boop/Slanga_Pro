@@ -48,11 +48,13 @@
 
 ### Hönnun
 
-- [ ] fá á hreint hvað á að testa
-- [ ] fá á hreint hvað á að vera í UML
-- [ ] fá á hreint með design pattern
-- [ ] fá á hreint með mvn site
-- [ ] finna út með jar
-- [ ] finna út með maven plugins
-- 
+- [ ] klára að gera tests
+- [ ] klára að gera UML
+- [x] fá á hreint með design pattern
+- [x] fá á hreint með mvn site
+- [x] finna út með jar
+- [x] finna út með maven plugins
+- [ ] klára að gera javadocs
+- [ ] klára að gera refactoring
+- [ ] klára að gera design patterns
 

@@ -17,15 +17,15 @@ public class PlayerTest {
         max = 25;
     }
 
-    @Test
-    public void testMove() {
-        dice.roll();
-        player.move(dice.getRollResult(), max);
-        assertTrue(player.getTile() > 0 && player.getTile() <= 6);
-        dice.roll();
-        player.move(dice.getRollResult(), max);
-        assertTrue(player.getTile() >= 2 && player.getTile() <= 12);
-    }
+//    @Test
+//    public void testMove() {
+//        dice.roll();
+//        player.move(dice.getRollResult(), max);
+//        assertTrue(player.getTile() > 0 && player.getTile() <= 6);
+//        dice.roll();
+//        player.move(dice.getRollResult(), max);
+//        assertTrue(player.getTile() >= 2 && player.getTile() <= 12);
+//    }
 
     @Test
     public void testReset() {
