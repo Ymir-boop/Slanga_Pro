@@ -147,7 +147,7 @@
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>3.4.1</version>
                 <configuration>
-<!--                    <excludeModules>false</excludeModules>-->
+                    <!--                    <excludeModules>false</excludeModules>-->
                 </configuration>
             </plugin>
         </plugins>
